@@ -1,1 +1,1024 @@
---SQL QUERIES--
+
+-- ============================================================
+-- PROJECT: PRICING, PROMOTIONS & CUSTOMER DEMAND OPTIMIZATION
+-- DATABASE: SYNTHETIC FASHION E-COMMERCE DATA
+-- TOOL: MYSQL WORKBENCH
+-- ============================================================
+
+CREATE DATABASE IF NOT EXISTS pricing_promotions_analytics;
+USE pricing_promotions_analytics;
+
+
+-- ============================================================
+-- SECTION 1: DATABASE EXPLORATION
+-- ============================================================
+
+-- 1. Display all tables
+SHOW TABLES;
+
+-- 2. Inspect table structures
+DESCRIBE customers;
+DESCRIBE products;
+DESCRIBE orders;
+DESCRIBE order_items;
+DESCRIBE promotions;
+DESCRIBE sessions;
+DESCRIBE inventory;
+
+-- 3. Count records in all tables
+SELECT 'Customers' AS table_name, COUNT(*) AS total_records FROM customers
+UNION ALL
+SELECT 'Products', COUNT(*) FROM products
+UNION ALL
+SELECT 'Orders', COUNT(*) FROM orders
+UNION ALL
+SELECT 'Order Items', COUNT(*) FROM order_items
+UNION ALL
+SELECT 'Promotions', COUNT(*) FROM promotions
+UNION ALL
+SELECT 'Sessions', COUNT(*) FROM sessions
+UNION ALL
+SELECT 'Inventory', COUNT(*) FROM inventory;
+
+
+-- ============================================================
+-- SECTION 2: DATA QUALITY AND VALIDATION
+-- ============================================================
+
+-- 4. Check missing customer values
+SELECT
+    COUNT(*) AS total_customers,
+    SUM(Customer_ID IS NULL) AS missing_customer_ids,
+    SUM(Signup_Date IS NULL) AS missing_signup_dates,
+    SUM(Age IS NULL) AS missing_age,
+    SUM(Gender IS NULL) AS missing_gender
+FROM customers;
+
+-- 5. Find duplicate customer IDs
+SELECT Customer_ID, COUNT(*) AS occurrences
+FROM customers
+GROUP BY Customer_ID
+HAVING COUNT(*) > 1;
+
+-- 6. Find duplicate product IDs
+SELECT Product_ID, COUNT(*) AS occurrences
+FROM products
+GROUP BY Product_ID
+HAVING COUNT(*) > 1;
+
+-- 7. Find duplicate order IDs
+SELECT Order_ID, COUNT(*) AS occurrences
+FROM orders
+GROUP BY Order_ID
+HAVING COUNT(*) > 1;
+
+-- 8. Check order status distribution
+SELECT
+    Order_Status,
+    COUNT(*) AS total_orders
+FROM orders
+GROUP BY Order_Status
+ORDER BY total_orders DESC;
+
+-- 9. Find orders with invalid customer references
+SELECT o.Order_ID, o.Customer_ID
+FROM orders o
+LEFT JOIN customers c
+    ON o.Customer_ID = c.Customer_ID
+WHERE c.Customer_ID IS NULL;
+
+-- 10. Find order items with invalid product references
+SELECT oi.Order_Item_ID, oi.Product_ID
+FROM order_items oi
+LEFT JOIN products p
+    ON oi.Product_ID = p.Product_ID
+WHERE p.Product_ID IS NULL;
+
+-- 11. Check missing values in products
+SELECT
+    COUNT(*) AS total_products,
+    SUM(Product_ID IS NULL) AS missing_product_ids,
+    SUM(Category IS NULL) AS missing_categories,
+    SUM(List_Price IS NULL) AS missing_prices,
+    SUM(Unit_Cost IS NULL) AS missing_costs
+FROM products;
+
+-- 12. Check invalid pricing records
+SELECT *
+FROM products
+WHERE List_Price <= 0
+   OR Unit_Cost < 0
+   OR Unit_Cost > List_Price;
+
+
+-- ============================================================
+-- SECTION 3: OVERALL BUSINESS PERFORMANCE
+-- ============================================================
+
+-- 13. Overall business KPIs
+SELECT
+    COUNT(DISTINCT o.Order_ID) AS total_orders,
+    COUNT(DISTINCT o.Customer_ID) AS total_customers,
+    SUM(oi.Quantity) AS units_sold,
+    ROUND(SUM(oi.Gross_Revenue), 2) AS gross_revenue,
+    ROUND(SUM(oi.Discount_Amount), 2) AS total_discount,
+    ROUND(SUM(oi.Net_Revenue), 2) AS net_revenue,
+    ROUND(SUM(oi.Total_Cost), 2) AS total_cost,
+    ROUND(SUM(oi.Gross_Profit), 2) AS gross_profit
+FROM orders o
+JOIN order_items oi
+    ON o.Order_ID = oi.Order_ID
+WHERE o.Order_Status = 'Delivered';
+
+-- 14. Monthly revenue trends
+SELECT
+    DATE_FORMAT(o.Order_Date, '%Y-%m') AS sales_month,
+    COUNT(DISTINCT o.Order_ID) AS total_orders,
+    SUM(oi.Quantity) AS units_sold,
+    ROUND(SUM(oi.Net_Revenue), 2) AS monthly_revenue,
+    ROUND(SUM(oi.Gross_Profit), 2) AS monthly_profit
+FROM orders o
+JOIN order_items oi
+    ON o.Order_ID = oi.Order_ID
+WHERE o.Order_Status = 'Delivered'
+GROUP BY sales_month
+ORDER BY sales_month;
+
+-- 15. Monthly order growth
+WITH monthly_sales AS (
+    SELECT
+        DATE_FORMAT(Order_Date, '%Y-%m') AS sales_month,
+        COUNT(*) AS total_orders
+    FROM orders
+    WHERE Order_Status = 'Delivered'
+    GROUP BY sales_month
+)
+SELECT
+    sales_month,
+    total_orders,
+    LAG(total_orders) OVER (ORDER BY sales_month) AS previous_month_orders,
+    ROUND(
+        (total_orders - LAG(total_orders) OVER (ORDER BY sales_month))
+        * 100.0 /
+        NULLIF(LAG(total_orders) OVER (ORDER BY sales_month), 0),
+        2
+    ) AS growth_percentage
+FROM monthly_sales;
+
+-- 16. Revenue and profit by order status
+SELECT
+    o.Order_Status,
+    COUNT(DISTINCT o.Order_ID) AS total_orders,
+    ROUND(SUM(oi.Net_Revenue), 2) AS net_revenue,
+    ROUND(SUM(oi.Gross_Profit), 2) AS gross_profit
+FROM orders o
+JOIN order_items oi
+    ON o.Order_ID = oi.Order_ID
+GROUP BY o.Order_Status
+ORDER BY net_revenue DESC;
+
+-- 17. Average order value
+SELECT
+    ROUND(
+        SUM(oi.Net_Revenue) / NULLIF(COUNT(DISTINCT o.Order_ID), 0),
+        2
+    ) AS average_order_value
+FROM orders o
+JOIN order_items oi
+    ON o.Order_ID = oi.Order_ID
+WHERE o.Order_Status = 'Delivered';
+
+-- 18. Revenue by payment method
+SELECT
+    o.Payment_Method,
+    COUNT(DISTINCT o.Order_ID) AS total_orders,
+    ROUND(SUM(oi.Net_Revenue), 2) AS revenue
+FROM orders o
+JOIN order_items oi
+    ON o.Order_ID = oi.Order_ID
+WHERE o.Order_Status = 'Delivered'
+GROUP BY o.Payment_Method
+ORDER BY revenue DESC;
+
+-- 19. Revenue by device
+SELECT
+    o.Device,
+    COUNT(DISTINCT o.Order_ID) AS total_orders,
+    ROUND(SUM(oi.Net_Revenue), 2) AS revenue
+FROM orders o
+JOIN order_items oi
+    ON o.Order_ID = oi.Order_ID
+WHERE o.Order_Status = 'Delivered'
+GROUP BY o.Device
+ORDER BY revenue DESC;
+
+
+-- ============================================================
+-- SECTION 4: PRODUCT AND CATEGORY ANALYSIS
+-- ============================================================
+
+-- 20. Category-wise performance
+SELECT
+    p.Category,
+    SUM(oi.Quantity) AS units_sold,
+    ROUND(SUM(oi.Net_Revenue), 2) AS revenue,
+    ROUND(SUM(oi.Gross_Profit), 2) AS profit,
+    ROUND(
+        SUM(oi.Gross_Profit) * 100.0 /
+        NULLIF(SUM(oi.Net_Revenue), 0),
+        2
+    ) AS profit_margin_percentage
+FROM order_items oi
+JOIN orders o ON oi.Order_ID = o.Order_ID
+JOIN products p ON oi.Product_ID = p.Product_ID
+WHERE o.Order_Status = 'Delivered'
+GROUP BY p.Category
+ORDER BY revenue DESC;
+
+-- 21. Sub-category performance
+SELECT
+    p.Category,
+    p.Sub_Category,
+    SUM(oi.Quantity) AS units_sold,
+    ROUND(SUM(oi.Net_Revenue), 2) AS revenue,
+    ROUND(SUM(oi.Gross_Profit), 2) AS profit
+FROM order_items oi
+JOIN orders o ON oi.Order_ID = o.Order_ID
+JOIN products p ON oi.Product_ID = p.Product_ID
+WHERE o.Order_Status = 'Delivered'
+GROUP BY p.Category, p.Sub_Category
+ORDER BY revenue DESC;
+
+-- 22. Top 10 products by revenue
+SELECT
+    p.Product_ID,
+    p.Brand,
+    p.Category,
+    p.Sub_Category,
+    SUM(oi.Quantity) AS units_sold,
+    ROUND(SUM(oi.Net_Revenue), 2) AS revenue
+FROM order_items oi
+JOIN orders o ON oi.Order_ID = o.Order_ID
+JOIN products p ON oi.Product_ID = p.Product_ID
+WHERE o.Order_Status = 'Delivered'
+GROUP BY p.Product_ID, p.Brand, p.Category, p.Sub_Category
+ORDER BY revenue DESC
+LIMIT 10;
+
+-- 23. Bottom 10 products by revenue
+SELECT
+    p.Product_ID,
+    p.Brand,
+    p.Category,
+    SUM(oi.Net_Revenue) AS revenue
+FROM order_items oi
+JOIN orders o ON oi.Order_ID = o.Order_ID
+JOIN products p ON oi.Product_ID = p.Product_ID
+WHERE o.Order_Status = 'Delivered'
+GROUP BY p.Product_ID, p.Brand, p.Category
+ORDER BY revenue ASC
+LIMIT 10;
+
+-- 24. Brand-wise revenue
+SELECT
+    p.Brand,
+    SUM(oi.Quantity) AS units_sold,
+    ROUND(SUM(oi.Net_Revenue), 2) AS revenue,
+    ROUND(SUM(oi.Gross_Profit), 2) AS profit
+FROM order_items oi
+JOIN orders o ON oi.Order_ID = o.Order_ID
+JOIN products p ON oi.Product_ID = p.Product_ID
+WHERE o.Order_Status = 'Delivered'
+GROUP BY p.Brand
+ORDER BY revenue DESC;
+
+-- 25. Category contribution to total revenue
+WITH category_revenue AS (
+    SELECT
+        p.Category,
+        SUM(oi.Net_Revenue) AS revenue
+    FROM order_items oi
+    JOIN orders o ON oi.Order_ID = o.Order_ID
+    JOIN products p ON oi.Product_ID = p.Product_ID
+    WHERE o.Order_Status = 'Delivered'
+    GROUP BY p.Category
+)
+SELECT
+    Category,
+    ROUND(revenue, 2) AS revenue,
+    ROUND(
+        revenue * 100.0 / SUM(revenue) OVER (),
+        2
+    ) AS revenue_contribution_percentage
+FROM category_revenue
+ORDER BY revenue DESC;
+
+
+-- ============================================================
+-- SECTION 5: PRICING AND DISCOUNT ANALYSIS
+-- ============================================================
+
+-- 26. Overall discount performance
+SELECT
+    ROUND(SUM(Gross_Revenue), 2) AS gross_revenue,
+    ROUND(SUM(Discount_Amount), 2) AS discount_given,
+    ROUND(SUM(Net_Revenue), 2) AS net_revenue,
+    ROUND(
+        SUM(Discount_Amount) * 100.0 /
+        NULLIF(SUM(Gross_Revenue), 0),
+        2
+    ) AS effective_discount_percentage
+FROM order_items oi
+JOIN orders o ON oi.Order_ID = o.Order_ID
+WHERE o.Order_Status = 'Delivered';
+
+-- 27. Discount band analysis
+SELECT
+    CASE
+        WHEN Discount_Rate = 0 THEN 'No Discount'
+        WHEN Discount_Rate <= 0.10 THEN '0-10%'
+        WHEN Discount_Rate <= 0.20 THEN '10-20%'
+        WHEN Discount_Rate <= 0.30 THEN '20-30%'
+        WHEN Discount_Rate <= 0.40 THEN '30-40%'
+        ELSE 'Above 40%'
+    END AS discount_band,
+    COUNT(*) AS total_items,
+    SUM(Quantity) AS units_sold,
+    ROUND(SUM(Net_Revenue), 2) AS revenue,
+    ROUND(SUM(Gross_Profit), 2) AS profit
+FROM order_items oi
+JOIN orders o ON oi.Order_ID = o.Order_ID
+WHERE o.Order_Status = 'Delivered'
+GROUP BY discount_band
+ORDER BY MIN(Discount_Rate);
+
+-- 28. Average discount by category
+SELECT
+    p.Category,
+    ROUND(AVG(oi.Discount_Rate) * 100, 2) AS average_discount_percentage,
+    ROUND(SUM(oi.Discount_Amount), 2) AS total_discount,
+    ROUND(SUM(oi.Net_Revenue), 2) AS net_revenue
+FROM order_items oi
+JOIN orders o ON oi.Order_ID = o.Order_ID
+JOIN products p ON oi.Product_ID = p.Product_ID
+WHERE o.Order_Status = 'Delivered'
+GROUP BY p.Category
+ORDER BY average_discount_percentage DESC;
+
+-- 29. Profit margin by discount band
+SELECT
+    CASE
+        WHEN Discount_Rate = 0 THEN 'No Discount'
+        WHEN Discount_Rate <= 0.10 THEN '0-10%'
+        WHEN Discount_Rate <= 0.20 THEN '10-20%'
+        WHEN Discount_Rate <= 0.30 THEN '20-30%'
+        WHEN Discount_Rate <= 0.40 THEN '30-40%'
+        ELSE 'Above 40%'
+    END AS discount_band,
+    ROUND(SUM(Gross_Profit), 2) AS total_profit,
+    ROUND(SUM(Net_Revenue), 2) AS net_revenue,
+    ROUND(
+        SUM(Gross_Profit) * 100.0 /
+        NULLIF(SUM(Net_Revenue), 0),
+        2
+    ) AS profit_margin_percentage
+FROM order_items oi
+JOIN orders o ON oi.Order_ID = o.Order_ID
+WHERE o.Order_Status = 'Delivered'
+GROUP BY discount_band
+ORDER BY MIN(Discount_Rate);
+
+-- 30. Products with high discounts and low profit
+SELECT
+    p.Product_ID,
+    p.Brand,
+    p.Category,
+    ROUND(AVG(oi.Discount_Rate) * 100, 2) AS average_discount,
+    ROUND(SUM(oi.Gross_Profit), 2) AS total_profit
+FROM order_items oi
+JOIN orders o ON oi.Order_ID = o.Order_ID
+JOIN products p ON oi.Product_ID = p.Product_ID
+WHERE o.Order_Status = 'Delivered'
+GROUP BY p.Product_ID, p.Brand, p.Category
+HAVING AVG(oi.Discount_Rate) > 0.30
+   AND SUM(oi.Gross_Profit) < 500
+ORDER BY total_profit ASC;
+
+
+-- ============================================================
+-- SECTION 6: PROMOTION ANALYSIS
+-- ============================================================
+
+-- 31. Promotion-wise performance
+SELECT
+    pr.Promotion_ID,
+    pr.Promotion_Name,
+    pr.Promotion_Type,
+    COUNT(DISTINCT o.Order_ID) AS total_orders,
+    ROUND(SUM(oi.Net_Revenue), 2) AS revenue,
+    ROUND(SUM(oi.Discount_Amount), 2) AS discounts_given,
+    ROUND(SUM(oi.Gross_Profit), 2) AS profit,
+    pr.Marketing_Spend
+FROM promotions pr
+LEFT JOIN orders o
+    ON pr.Promotion_ID = o.Promotion_ID
+LEFT JOIN order_items oi
+    ON o.Order_ID = oi.Order_ID
+WHERE o.Order_Status = 'Delivered'
+GROUP BY
+    pr.Promotion_ID,
+    pr.Promotion_Name,
+    pr.Promotion_Type,
+    pr.Marketing_Spend
+ORDER BY revenue DESC;
+
+-- 32. Promotion type comparison
+SELECT
+    pr.Promotion_Type,
+    COUNT(DISTINCT o.Order_ID) AS total_orders,
+    ROUND(SUM(oi.Net_Revenue), 2) AS revenue,
+    ROUND(SUM(oi.Discount_Amount), 2) AS discounts,
+    ROUND(SUM(oi.Gross_Profit), 2) AS profit
+FROM promotions pr
+JOIN orders o ON pr.Promotion_ID = o.Promotion_ID
+JOIN order_items oi ON o.Order_ID = oi.Order_ID
+WHERE o.Order_Status = 'Delivered'
+GROUP BY pr.Promotion_Type
+ORDER BY revenue DESC;
+
+-- 33. Promotion versus no-promotion comparison
+SELECT
+    CASE
+        WHEN o.Promotion_ID IS NULL
+          OR o.Promotion_ID = 'NO_PROMO'
+        THEN 'No Promotion'
+        ELSE 'Promotion Applied'
+    END AS promotion_status,
+    COUNT(DISTINCT o.Order_ID) AS total_orders,
+    ROUND(SUM(oi.Net_Revenue), 2) AS revenue,
+    ROUND(SUM(oi.Gross_Profit), 2) AS profit,
+    ROUND(AVG(oi.Discount_Rate) * 100, 2) AS average_discount
+FROM orders o
+JOIN order_items oi ON o.Order_ID = oi.Order_ID
+WHERE o.Order_Status = 'Delivered'
+GROUP BY promotion_status;
+
+-- 34. Marketing spend and promotional revenue
+SELECT
+    pr.Promotion_Name,
+    pr.Marketing_Spend,
+    ROUND(SUM(oi.Net_Revenue), 2) AS campaign_revenue,
+    ROUND(SUM(oi.Gross_Profit), 2) AS campaign_profit,
+    ROUND(
+        SUM(oi.Net_Revenue) / NULLIF(pr.Marketing_Spend, 0),
+        2
+    ) AS revenue_to_marketing_spend_ratio
+FROM promotions pr
+JOIN orders o ON pr.Promotion_ID = o.Promotion_ID
+JOIN order_items oi ON o.Order_ID = oi.Order_ID
+WHERE o.Order_Status = 'Delivered'
+GROUP BY pr.Promotion_ID, pr.Promotion_Name, pr.Marketing_Spend
+ORDER BY campaign_revenue DESC;
+
+
+-- ============================================================
+-- SECTION 7: CUSTOMER ANALYTICS
+-- ============================================================
+
+-- 35. Customer distribution by gender
+SELECT
+    Gender,
+    COUNT(*) AS total_customers
+FROM customers
+GROUP BY Gender;
+
+-- 36. Customer distribution by city tier
+SELECT
+    City_Tier,
+    COUNT(*) AS total_customers
+FROM customers
+GROUP BY City_Tier
+ORDER BY City_Tier;
+
+-- 37. Customer acquisition channel analysis
+SELECT
+    Acquisition_Channel,
+    COUNT(*) AS total_customers
+FROM customers
+GROUP BY Acquisition_Channel
+ORDER BY total_customers DESC;
+
+-- 38. Customer revenue contribution
+SELECT
+    c.Customer_ID,
+    c.Gender,
+    c.City_Tier,
+    COUNT(DISTINCT o.Order_ID) AS total_orders,
+    ROUND(SUM(oi.Net_Revenue), 2) AS customer_revenue
+FROM customers c
+JOIN orders o ON c.Customer_ID = o.Customer_ID
+JOIN order_items oi ON o.Order_ID = oi.Order_ID
+WHERE o.Order_Status = 'Delivered'
+GROUP BY c.Customer_ID, c.Gender, c.City_Tier
+ORDER BY customer_revenue DESC;
+
+-- 39. Average customer order value
+SELECT
+    ROUND(
+        SUM(oi.Net_Revenue) /
+        NULLIF(COUNT(DISTINCT o.Order_ID), 0),
+        2
+    ) AS average_order_value
+FROM orders o
+JOIN order_items oi ON o.Order_ID = oi.Order_ID
+WHERE o.Order_Status = 'Delivered';
+
+-- 40. Revenue by customer acquisition channel
+SELECT
+    c.Acquisition_Channel,
+    COUNT(DISTINCT c.Customer_ID) AS customers,
+    COUNT(DISTINCT o.Order_ID) AS orders,
+    ROUND(SUM(oi.Net_Revenue), 2) AS revenue
+FROM customers c
+JOIN orders o ON c.Customer_ID = o.Customer_ID
+JOIN order_items oi ON o.Order_ID = oi.Order_ID
+WHERE o.Order_Status = 'Delivered'
+GROUP BY c.Acquisition_Channel
+ORDER BY revenue DESC;
+
+-- 41. Revenue by loyalty segment
+SELECT
+    c.Loyalty_Segment,
+    COUNT(DISTINCT c.Customer_ID) AS customers,
+    COUNT(DISTINCT o.Order_ID) AS orders,
+    ROUND(SUM(oi.Net_Revenue), 2) AS revenue
+FROM customers c
+JOIN orders o ON c.Customer_ID = o.Customer_ID
+JOIN order_items oi ON o.Order_ID = oi.Order_ID
+WHERE o.Order_Status = 'Delivered'
+GROUP BY c.Loyalty_Segment
+ORDER BY revenue DESC;
+
+
+-- ============================================================
+-- SECTION 8: RFM CUSTOMER SEGMENTATION
+-- ============================================================
+
+-- 42. Calculate RFM metrics
+CREATE TEMPORARY TABLE customer_rfm AS
+SELECT
+    c.Customer_ID,
+    MAX(o.Order_Date) AS last_purchase_date,
+    DATEDIFF(
+        (SELECT MAX(Order_Date)
+         FROM orders
+         WHERE Order_Status = 'Delivered'),
+        MAX(o.Order_Date)
+    ) AS recency,
+    COUNT(DISTINCT o.Order_ID) AS frequency,
+    ROUND(SUM(oi.Net_Revenue), 2) AS monetary
+FROM customers c
+JOIN orders o ON c.Customer_ID = o.Customer_ID
+JOIN order_items oi ON o.Order_ID = oi.Order_ID
+WHERE o.Order_Status = 'Delivered'
+GROUP BY c.Customer_ID;
+
+-- 43. Assign RFM scores and customer segments
+WITH rfm_scores AS (
+    SELECT *,
+        NTILE(5) OVER (ORDER BY recency DESC) AS R_Score,
+        NTILE(5) OVER (ORDER BY frequency ASC) AS F_Score,
+        NTILE(5) OVER (ORDER BY monetary ASC) AS M_Score
+    FROM customer_rfm
+)
+SELECT
+    Customer_ID,
+    recency,
+    frequency,
+    monetary,
+    R_Score,
+    F_Score,
+    M_Score,
+    CASE
+        WHEN R_Score >= 4 AND F_Score >= 4 AND M_Score >= 4
+            THEN 'Champions'
+        WHEN R_Score >= 3 AND F_Score >= 3
+            THEN 'Loyal Customers'
+        WHEN R_Score >= 4 AND F_Score <= 2
+            THEN 'Potential Loyalists'
+        WHEN R_Score <= 2 AND F_Score >= 3
+            THEN 'At Risk'
+        WHEN R_Score <= 2 AND F_Score <= 2
+            THEN 'Lost Customers'
+        ELSE 'Regular Customers'
+    END AS Customer_Segment
+FROM rfm_scores
+ORDER BY monetary DESC;
+
+-- 44. Customer segment distribution
+WITH rfm_scores AS (
+    SELECT *,
+        NTILE(5) OVER (ORDER BY recency DESC) AS R_Score,
+        NTILE(5) OVER (ORDER BY frequency ASC) AS F_Score,
+        NTILE(5) OVER (ORDER BY monetary ASC) AS M_Score
+    FROM customer_rfm
+),
+segments AS (
+    SELECT *,
+        CASE
+            WHEN R_Score >= 4 AND F_Score >= 4 AND M_Score >= 4
+                THEN 'Champions'
+            WHEN R_Score >= 3 AND F_Score >= 3
+                THEN 'Loyal Customers'
+            WHEN R_Score >= 4 AND F_Score <= 2
+                THEN 'Potential Loyalists'
+            WHEN R_Score <= 2 AND F_Score >= 3
+                THEN 'At Risk'
+            WHEN R_Score <= 2 AND F_Score <= 2
+                THEN 'Lost Customers'
+            ELSE 'Regular Customers'
+        END AS Customer_Segment
+    FROM rfm_scores
+)
+SELECT
+    Customer_Segment,
+    COUNT(*) AS customer_count,
+    ROUND(AVG(monetary), 2) AS average_customer_value
+FROM segments
+GROUP BY Customer_Segment
+ORDER BY customer_count DESC;
+
+
+-- ============================================================
+-- SECTION 9: COHORT AND RETENTION ANALYSIS
+-- ============================================================
+
+-- 45. Monthly customer acquisition cohorts
+SELECT
+    DATE_FORMAT(Signup_Date, '%Y-%m') AS signup_month,
+    COUNT(*) AS new_customers
+FROM customers
+GROUP BY signup_month
+ORDER BY signup_month;
+
+-- 46. Monthly repeat purchase behaviour
+SELECT
+    Customer_ID,
+    COUNT(DISTINCT DATE_FORMAT(Order_Date, '%Y-%m')) AS active_months,
+    COUNT(DISTINCT Order_ID) AS total_orders
+FROM orders
+WHERE Order_Status = 'Delivered'
+GROUP BY Customer_ID
+HAVING COUNT(DISTINCT Order_ID) > 1
+ORDER BY total_orders DESC;
+
+-- 47. Cohort retention analysis
+WITH customer_cohorts AS (
+    SELECT
+        c.Customer_ID,
+        DATE_FORMAT(c.Signup_Date, '%Y-%m') AS cohort_month,
+        DATE_FORMAT(o.Order_Date, '%Y-%m') AS order_month,
+        PERIOD_DIFF(
+            DATE_FORMAT(o.Order_Date, '%Y%m'),
+            DATE_FORMAT(c.Signup_Date, '%Y%m')
+        ) AS month_number
+    FROM customers c
+    JOIN orders o ON c.Customer_ID = o.Customer_ID
+    WHERE o.Order_Status = 'Delivered'
+),
+cohort_sizes AS (
+    SELECT
+        cohort_month,
+        COUNT(DISTINCT Customer_ID) AS cohort_size
+    FROM customer_cohorts
+    WHERE month_number = 0
+    GROUP BY cohort_month
+),
+retention AS (
+    SELECT
+        cohort_month,
+        month_number,
+        COUNT(DISTINCT Customer_ID) AS active_customers
+    FROM customer_cohorts
+    GROUP BY cohort_month, month_number
+)
+SELECT
+    r.cohort_month,
+    r.month_number,
+    r.active_customers,
+    cs.cohort_size,
+    ROUND(
+        r.active_customers * 100.0 /
+        NULLIF(cs.cohort_size, 0),
+        2
+    ) AS retention_percentage
+FROM retention r
+JOIN cohort_sizes cs
+    ON r.cohort_month = cs.cohort_month
+ORDER BY r.cohort_month, r.month_number;
+
+
+-- ============================================================
+-- SECTION 10: SESSION AND CONVERSION ANALYSIS
+-- ============================================================
+
+-- 48. Overall session performance
+SELECT
+    COUNT(*) AS total_sessions,
+    SUM(converted) AS converted_sessions,
+    COUNT(*) - SUM(converted) AS non_converted_sessions,
+    ROUND(
+        SUM(converted) * 100.0 / NULLIF(COUNT(*), 0),
+        2
+    ) AS conversion_rate
+FROM sessions;
+
+-- 49. Conversion rate by traffic source
+SELECT
+    traffic_source,
+    COUNT(*) AS total_sessions,
+    SUM(converted) AS conversions,
+    ROUND(
+        SUM(converted) * 100.0 / NULLIF(COUNT(*), 0),
+        2
+    ) AS conversion_rate
+FROM sessions
+GROUP BY traffic_source
+ORDER BY conversion_rate DESC;
+
+-- 50. Conversion rate by device
+SELECT
+    device,
+    COUNT(*) AS total_sessions,
+    SUM(converted) AS conversions,
+    ROUND(
+        SUM(converted) * 100.0 / NULLIF(COUNT(*), 0),
+        2
+    ) AS conversion_rate
+FROM sessions
+GROUP BY device
+ORDER BY conversion_rate DESC;
+
+-- 51. Monthly session conversion
+SELECT
+    DATE_FORMAT(session_date, '%Y-%m') AS session_month,
+    COUNT(*) AS total_sessions,
+    SUM(converted) AS conversions,
+    ROUND(
+        SUM(converted) * 100.0 / NULLIF(COUNT(*), 0),
+        2
+    ) AS conversion_rate
+FROM sessions
+GROUP BY session_month
+ORDER BY session_month;
+
+-- 52. Customer session activity
+SELECT
+    customer_id,
+    COUNT(*) AS total_sessions,
+    SUM(converted) AS total_conversions,
+    ROUND(AVG(converted) * 100, 2) AS conversion_percentage
+FROM sessions
+WHERE customer_id IS NOT NULL
+GROUP BY customer_id
+ORDER BY total_sessions DESC;
+
+
+-- ============================================================
+-- SECTION 11: INVENTORY AND DEMAND ANALYSIS
+-- ============================================================
+
+-- 53. Latest inventory snapshot by product
+WITH latest_inventory AS (
+    SELECT
+        Product_ID,
+        MAX(Snapshot_Month) AS latest_month
+    FROM inventory
+    GROUP BY Product_ID
+)
+SELECT
+    i.Product_ID,
+    p.Category,
+    i.Snapshot_Month,
+    i.Opening_Stock,
+    i.Stock_Received,
+    i.Units_Sold,
+    i.Closing_Stock
+FROM inventory i
+JOIN latest_inventory li
+    ON i.Product_ID = li.Product_ID
+   AND i.Snapshot_Month = li.latest_month
+JOIN products p
+    ON i.Product_ID = p.Product_ID
+ORDER BY i.Closing_Stock ASC;
+
+-- 54. Inventory by category
+SELECT
+    p.Category,
+    SUM(i.Opening_Stock) AS opening_stock,
+    SUM(i.Stock_Received) AS stock_received,
+    SUM(i.Units_Sold) AS units_sold,
+    SUM(i.Closing_Stock) AS closing_stock
+FROM inventory i
+JOIN products p ON i.Product_ID = p.Product_ID
+GROUP BY p.Category
+ORDER BY units_sold DESC;
+
+-- 55. Products with low closing stock
+SELECT
+    i.Product_ID,
+    p.Brand,
+    p.Category,
+    i.Snapshot_Month,
+    i.Closing_Stock,
+    i.Units_Sold
+FROM inventory i
+JOIN products p ON i.Product_ID = p.Product_ID
+WHERE i.Closing_Stock <= 10
+ORDER BY i.Closing_Stock ASC;
+
+-- 56. Monthly demand trends by category
+SELECT
+    i.Snapshot_Month,
+    p.Category,
+    SUM(i.Units_Sold) AS total_demand
+FROM inventory i
+JOIN products p ON i.Product_ID = p.Product_ID
+GROUP BY i.Snapshot_Month, p.Category
+ORDER BY i.Snapshot_Month, total_demand DESC;
+
+-- 57. Inventory turnover ratio
+SELECT
+    p.Category,
+    ROUND(
+        SUM(i.Units_Sold) /
+        NULLIF(AVG(i.Opening_Stock + i.Closing_Stock) / 2, 0),
+        2
+    ) AS inventory_turnover_ratio
+FROM inventory i
+JOIN products p ON i.Product_ID = p.Product_ID
+GROUP BY p.Category
+ORDER BY inventory_turnover_ratio DESC;
+
+-- 58. Monthly product demand ranking
+WITH product_demand AS (
+    SELECT
+        i.Snapshot_Month,
+        i.Product_ID,
+        SUM(i.Units_Sold) AS total_units_sold
+    FROM inventory i
+    GROUP BY i.Snapshot_Month, i.Product_ID
+)
+SELECT
+    Snapshot_Month,
+    Product_ID,
+    total_units_sold,
+    DENSE_RANK() OVER (
+        PARTITION BY Snapshot_Month
+        ORDER BY total_units_sold DESC
+    ) AS demand_rank
+FROM product_demand
+ORDER BY Snapshot_Month, demand_rank;
+
+
+-- ============================================================
+-- SECTION 12: ADVANCED BUSINESS INSIGHTS
+-- ============================================================
+
+-- 59. Identify high-revenue and high-profit categories
+SELECT
+    p.Category,
+    ROUND(SUM(oi.Net_Revenue), 2) AS revenue,
+    ROUND(SUM(oi.Gross_Profit), 2) AS profit
+FROM order_items oi
+JOIN orders o ON oi.Order_ID = o.Order_ID
+JOIN products p ON oi.Product_ID = p.Product_ID
+WHERE o.Order_Status = 'Delivered'
+GROUP BY p.Category
+HAVING SUM(oi.Net_Revenue) >
+    (
+        SELECT AVG(category_revenue)
+        FROM (
+            SELECT SUM(oi2.Net_Revenue) AS category_revenue
+            FROM order_items oi2
+            JOIN orders o2 ON oi2.Order_ID = o2.Order_ID
+            JOIN products p2 ON oi2.Product_ID = p2.Product_ID
+            WHERE o2.Order_Status = 'Delivered'
+            GROUP BY p2.Category
+        ) AS category_average
+    )
+ORDER BY profit DESC;
+
+-- 60. High-value customers
+SELECT
+    Customer_ID,
+    frequency,
+    monetary,
+    recency
+FROM customer_rfm
+WHERE monetary >= (
+    SELECT AVG(monetary)
+    FROM customer_rfm
+)
+ORDER BY monetary DESC;
+
+-- 61. Products with strong sales but low remaining inventory
+WITH latest_inventory AS (
+    SELECT
+        Product_ID,
+        MAX(Snapshot_Month) AS latest_month
+    FROM inventory
+    GROUP BY Product_ID
+),
+sales AS (
+    SELECT
+        oi.Product_ID,
+        SUM(oi.Quantity) AS total_units_sold
+    FROM order_items oi
+    JOIN orders o ON oi.Order_ID = o.Order_ID
+    WHERE o.Order_Status = 'Delivered'
+    GROUP BY oi.Product_ID
+)
+SELECT
+    p.Product_ID,
+    p.Category,
+    s.total_units_sold,
+    i.Closing_Stock
+FROM products p
+JOIN sales s ON p.Product_ID = s.Product_ID
+JOIN latest_inventory li ON p.Product_ID = li.Product_ID
+JOIN inventory i
+    ON i.Product_ID = li.Product_ID
+   AND i.Snapshot_Month = li.latest_month
+WHERE i.Closing_Stock < 20
+ORDER BY s.total_units_sold DESC;
+
+-- 62. Revenue and profitability by age group
+SELECT
+    CASE
+        WHEN c.Age < 20 THEN 'Below 20'
+        WHEN c.Age BETWEEN 20 AND 29 THEN '20-29'
+        WHEN c.Age BETWEEN 30 AND 39 THEN '30-39'
+        WHEN c.Age BETWEEN 40 AND 49 THEN '40-49'
+        ELSE '50+'
+    END AS age_group,
+    COUNT(DISTINCT c.Customer_ID) AS customers,
+    ROUND(SUM(oi.Net_Revenue), 2) AS revenue,
+    ROUND(SUM(oi.Gross_Profit), 2) AS profit
+FROM customers c
+JOIN orders o ON c.Customer_ID = o.Customer_ID
+JOIN order_items oi ON o.Order_ID = oi.Order_ID
+WHERE o.Order_Status = 'Delivered'
+GROUP BY age_group
+ORDER BY revenue DESC;
+
+-- 63. Monthly revenue by category
+SELECT
+    DATE_FORMAT(o.Order_Date, '%Y-%m') AS sales_month,
+    p.Category,
+    ROUND(SUM(oi.Net_Revenue), 2) AS revenue
+FROM orders o
+JOIN order_items oi ON o.Order_ID = oi.Order_ID
+JOIN products p ON oi.Product_ID = p.Product_ID
+WHERE o.Order_Status = 'Delivered'
+GROUP BY sales_month, p.Category
+ORDER BY sales_month, revenue DESC;
+
+-- 64. Average selling price by category
+SELECT
+    p.Category,
+    ROUND(
+        SUM(oi.Net_Revenue) /
+        NULLIF(SUM(oi.Quantity), 0),
+        2
+    ) AS average_selling_price
+FROM order_items oi
+JOIN orders o ON oi.Order_ID = o.Order_ID
+JOIN products p ON oi.Product_ID = p.Product_ID
+WHERE o.Order_Status = 'Delivered'
+GROUP BY p.Category
+ORDER BY average_selling_price DESC;
+
+-- 65. Promotion performance by category
+SELECT
+    pr.Promotion_Type,
+    p.Category,
+    COUNT(DISTINCT o.Order_ID) AS total_orders,
+    ROUND(SUM(oi.Net_Revenue), 2) AS revenue,
+    ROUND(SUM(oi.Gross_Profit), 2) AS profit
+FROM orders o
+JOIN order_items oi ON o.Order_ID = oi.Order_ID
+JOIN products p ON oi.Product_ID = p.Product_ID
+JOIN promotions pr ON o.Promotion_ID = pr.Promotion_ID
+WHERE o.Order_Status = 'Delivered'
+GROUP BY pr.Promotion_Type, p.Category
+ORDER BY revenue DESC;
+
+
+-- ============================================================
+-- END OF SQL ANALYSIS
+-- ============================================================
+
+-- The temporary RFM table exists only for the current session.
+-- Re-run Query 42 before executing Queries 43, 44 or 60
+-- if the MySQL session has been closed.
