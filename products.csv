@@ -1,0 +1,1001 @@
+Product_ID,Brand,Category,Sub-Category,List_Price,Launch_Date,Unit_Cost
+P0001,Brand_25,Kidswear,Trousers,5477.29,23-03-2024,3369.77
+P0002,Brand_17,Kidswear,Sneakers,3907.42,21-04-2026,2227.88
+P0003,Brand_25,Footwear,Sandals,1556.04,06-04-2025,669.78
+P0004,Brand_07,Women Ethnicwear,Skincare,1470.42,23-05-2026,853.26
+P0005,Brand_09,Men Casualwear,Tops,2317.26,01-01-2025,1016.81
+P0006,Brand_03,Men Casualwear,Tops,2329.18,04-01-2026,783.7
+P0007,Brand_21,Women Ethnicwear,Watches,1214.72,18-10-2024,577.48
+P0008,Brand_22,Women Ethnicwear,Sneakers,5891.23,26-01-2025,3493.73
+P0009,Brand_09,Footwear,Bags,2192.6,01-11-2024,1208.24
+P0010,Brand_12,Women Ethnicwear,Trousers,5674.05,27-04-2025,2431.99
+P0011,Brand_18,Women Ethnicwear,Shirts,6821.12,15-07-2024,3912.3
+P0012,Brand_23,Kidswear,Watches,2523.14,19-03-2025,1131.73
+P0013,Brand_10,Footwear,Shirts,6799.55,10-01-2026,3529.4
+P0014,Brand_15,Accessories,Watches,1580.05,17-05-2024,642.45
+P0015,Brand_06,Women Westernwear,Dresses,4636.94,30-11-2025,1680
+P0016,Brand_25,Men Casualwear,Jeans,6939.91,23-01-2026,2778.12
+P0017,Brand_27,Footwear,Sandals,5715.09,31-01-2024,3315.05
+P0018,Brand_23,Beauty,Sandals,1838,19-08-2025,1133.54
+P0019,Brand_25,Men Casualwear,Tops,2023.13,03-03-2025,777.8
+P0020,Brand_23,Kidswear,Kurtas,2057.29,16-07-2025,726.05
+P0021,Brand_26,Beauty,Tops,6617.05,16-09-2024,2135.63
+P0022,Brand_13,Women Westernwear,Kurtas,1943.26,13-07-2024,1051.74
+P0023,Brand_07,Women Ethnicwear,Shirts,3713.42,10-09-2024,1741.45
+P0024,Brand_29,Women Ethnicwear,Bags,2643.26,15-05-2024,1263.35
+P0025,Brand_01,Accessories,Bags,2719.5,23-12-2024,855.19
+P0026,Brand_13,Accessories,Sandals,3034.06,09-02-2026,988.92
+P0027,Brand_22,Men Formalwear,Sandals,2610.8,17-11-2025,1547.37
+P0028,Brand_24,Beauty,Tops,4318.51,07-06-2024,2092.55
+P0029,Brand_21,Kidswear,Kurtas,3149.66,07-05-2025,1165.83
+P0030,Brand_15,Women Westernwear,Dresses,3253.78,06-03-2024,1192.14
+P0031,Brand_28,Kidswear,Bags,3689.16,22-02-2024,1391.14
+P0032,Brand_08,Men Formalwear,Tops,2685.4,05-07-2025,860.41
+P0033,Brand_05,Men Formalwear,Watches,5354.55,23-09-2024,1691.63
+P0034,Brand_19,Women Westernwear,Jeans,3672.33,13-09-2025,1947.79
+P0035,Brand_10,Beauty,Sandals,3710.71,17-05-2024,1426.41
+P0036,Brand_15,Footwear,Tops,1704.96,15-04-2024,721.25
+P0037,Brand_14,Women Ethnicwear,Shirts,505.61,22-09-2025,238.63
+P0038,Brand_08,Beauty,Sneakers,5721.14,01-07-2024,2302.3
+P0039,Brand_30,Women Westernwear,Bags,6030.73,21-02-2024,2733.2
+P0040,Brand_12,Men Casualwear,Skincare,1915.35,26-11-2025,1104.78
+P0041,Brand_21,Footwear,Shirts,2711.22,14-09-2025,1025.14
+P0042,Brand_05,Accessories,Skincare,2697.72,30-03-2026,1492.39
+P0043,Brand_30,Women Westernwear,Shirts,4883.22,12-06-2025,1877.42
+P0044,Brand_30,Men Formalwear,Skincare,1553.48,24-02-2025,558.98
+P0045,Brand_03,Men Casualwear,Sandals,6856.38,14-08-2025,2216.33
+P0046,Brand_20,Beauty,Shirts,713.47,29-11-2025,370.25
+P0047,Brand_18,Accessories,Shirts,6823.24,08-07-2025,2945.75
+P0048,Brand_06,Beauty,Sandals,759.84,08-10-2024,415.28
+P0049,Brand_24,Accessories,Skincare,2426.34,23-02-2026,830.91
+P0050,Brand_23,Men Formalwear,Trousers,1978.64,12-09-2025,975.61
+P0051,Brand_26,Footwear,Sandals,2038.55,12-02-2026,620.04
+P0052,Brand_19,Men Casualwear,Sneakers,6963.29,06-05-2025,2610.02
+P0053,Brand_22,Kidswear,Sandals,3369.96,31-01-2025,1668.42
+P0054,Brand_22,Women Westernwear,Kurtas,1099.72,13-01-2026,349.64
+P0055,Brand_24,Kidswear,Jeans,6880.28,23-06-2025,2894.62
+P0056,Brand_18,Beauty,Sneakers,1924.86,15-11-2025,923.42
+P0057,Brand_23,Kidswear,Sneakers,785.07,23-02-2026,418.31
+P0058,Brand_02,Beauty,Skincare,461.01,07-09-2024,242.4
+P0059,Brand_19,Men Casualwear,Bags,3402.65,19-06-2024,1182.14
+P0060,Brand_07,Men Casualwear,Sandals,6451.83,11-05-2024,2090.74
+P0061,Brand_13,Women Westernwear,Shirts,412.64,13-06-2025,173.49
+P0062,Brand_24,Kidswear,Bags,5157.68,13-12-2025,1944.74
+P0063,Brand_04,Women Ethnicwear,Jeans,2043.83,11-05-2026,813.08
+P0064,Brand_23,Accessories,Kurtas,1766.71,29-01-2024,723.64
+P0065,Brand_08,Beauty,Skincare,5014.39,02-01-2024,2141.63
+P0066,Brand_23,Women Westernwear,Sneakers,5309.75,21-08-2025,2474.09
+P0067,Brand_23,Kidswear,Shirts,4044.4,25-08-2024,1225.36
+P0068,Brand_01,Women Westernwear,Watches,1654.11,23-02-2025,653.97
+P0069,Brand_08,Women Westernwear,Skincare,341.26,10-03-2024,131.25
+P0070,Brand_25,Footwear,Kurtas,5238.76,07-03-2024,1967.63
+P0071,Brand_11,Women Ethnicwear,Bags,4316.42,10-04-2025,2384.21
+P0072,Brand_14,Women Ethnicwear,Watches,3130.06,30-08-2025,1190.72
+P0073,Brand_01,Footwear,Dresses,1730,20-02-2026,602.57
+P0074,Brand_21,Kidswear,Tops,5403.96,01-03-2025,3094.22
+P0075,Brand_03,Women Ethnicwear,Bags,774,23-07-2025,327.05
+P0076,Brand_09,Beauty,Tops,4605.11,28-01-2026,1652.73
+P0077,Brand_15,Footwear,Kurtas,4911.27,15-01-2025,2653.98
+P0078,Brand_24,Women Ethnicwear,Kurtas,1794.82,03-07-2024,915.89
+P0079,Brand_15,Women Westernwear,Skincare,3537.28,29-12-2025,2131.2
+P0080,Brand_30,Men Formalwear,Watches,3784.34,03-01-2024,2198.3
+P0081,Brand_16,Beauty,Sneakers,4260.59,31-08-2024,2224.8
+P0082,Brand_08,Women Westernwear,Trousers,6336.96,25-04-2024,2227.55
+P0083,Brand_06,Men Formalwear,Tops,3959.98,21-07-2025,1800.28
+P0084,Brand_24,Men Formalwear,Jeans,750.03,25-08-2024,253.52
+P0085,Brand_14,Beauty,Bags,2610.31,30-10-2024,1242
+P0086,Brand_19,Women Westernwear,Watches,4508.79,29-07-2025,2675.38
+P0087,Brand_12,Beauty,Shirts,2531.04,18-09-2024,762.41
+P0088,Brand_09,Accessories,Watches,5444.2,15-11-2024,3159.4
+P0089,Brand_18,Footwear,Sandals,1571.37,16-03-2025,742.6
+P0090,Brand_09,Beauty,Kurtas,1257.13,14-04-2024,437.98
+P0091,Brand_30,Women Westernwear,Shirts,1846.92,04-04-2026,1059.9
+P0092,Brand_22,Kidswear,Bags,6168.77,15-05-2026,2910.47
+P0093,Brand_25,Men Casualwear,Shirts,4861.26,20-09-2025,2155.55
+P0094,Brand_09,Women Westernwear,Dresses,3783.33,05-04-2024,1739.99
+P0095,Brand_01,Footwear,Bags,2311.26,20-02-2025,802.37
+P0096,Brand_02,Men Formalwear,Bags,6453.56,09-11-2024,2168.89
+P0097,Brand_26,Men Formalwear,Jeans,6253.8,26-05-2024,3200.06
+P0098,Brand_27,Accessories,Skincare,2974.98,12-02-2026,1730.64
+P0099,Brand_21,Footwear,Trousers,5342.25,01-01-2025,2789.87
+P0100,Brand_18,Men Casualwear,Jeans,6419.88,29-07-2025,3653.24
+P0101,Brand_07,Accessories,Sandals,2398.47,01-09-2025,1367.91
+P0102,Brand_23,Men Formalwear,Shirts,2501.41,09-10-2024,776.07
+P0103,Brand_16,Kidswear,Sandals,3955.9,03-11-2024,2162.71
+P0104,Brand_19,Kidswear,Kurtas,3035.06,05-05-2026,1660.39
+P0105,Brand_01,Men Formalwear,Skincare,5400.91,28-12-2025,2225.14
+P0106,Brand_16,Accessories,Dresses,3896.43,17-03-2025,1679.95
+P0107,Brand_21,Beauty,Watches,1718.43,15-04-2025,925.47
+P0108,Brand_24,Accessories,Sneakers,2686.79,08-01-2024,1654.25
+P0109,Brand_05,Men Formalwear,Tops,4796.3,29-06-2024,2955.02
+P0110,Brand_01,Men Formalwear,Skincare,657.01,06-01-2024,296.73
+P0111,Brand_26,Men Casualwear,Jeans,2591.52,11-12-2025,1432.22
+P0112,Brand_10,Footwear,Trousers,406.84,09-04-2026,182.73
+P0113,Brand_15,Footwear,Trousers,5798.81,23-05-2024,3346.53
+P0114,Brand_19,Men Formalwear,Bags,1084.17,05-09-2024,550.66
+P0115,Brand_15,Men Casualwear,Skincare,816.27,06-11-2024,489.54
+P0116,Brand_29,Men Formalwear,Jeans,5569.17,17-12-2025,3447.97
+P0117,Brand_26,Footwear,Tops,898.7,25-12-2024,364.57
+P0118,Brand_12,Women Westernwear,Tops,4883.56,08-02-2024,2995.5
+P0119,Brand_06,Beauty,Sandals,2844.09,31-05-2025,1483.49
+P0120,Brand_30,Accessories,Jeans,5804.39,09-05-2024,2183.54
+P0121,Brand_22,Men Casualwear,Trousers,1524.1,23-07-2025,458.75
+P0122,Brand_23,Men Formalwear,Jeans,864.59,25-01-2026,448.57
+P0123,Brand_14,Women Ethnicwear,Shirts,1829.33,29-02-2024,678.98
+P0124,Brand_15,Footwear,Kurtas,6544.3,26-05-2026,2447.84
+P0125,Brand_06,Men Formalwear,Kurtas,5854.11,07-08-2025,2790.62
+P0126,Brand_13,Accessories,Sneakers,2213.77,15-02-2024,686.04
+P0127,Brand_17,Kidswear,Tops,1679.96,13-07-2024,727.82
+P0128,Brand_04,Accessories,Dresses,1349.84,27-05-2024,750.24
+P0129,Brand_20,Women Westernwear,Sandals,1781.06,18-02-2026,549.85
+P0130,Brand_19,Women Westernwear,Kurtas,1672.79,29-09-2025,835.83
+P0131,Brand_26,Men Formalwear,Sneakers,6249.86,24-11-2024,2191.71
+P0132,Brand_02,Footwear,Tops,432.91,12-04-2025,249.4
+P0133,Brand_07,Women Ethnicwear,Sneakers,6195.82,03-11-2024,2633.35
+P0134,Brand_13,Men Formalwear,Tops,576.55,24-12-2024,322.8
+P0135,Brand_27,Women Ethnicwear,Sneakers,5838.79,16-07-2025,3104.03
+P0136,Brand_08,Men Casualwear,Sandals,3151.51,20-06-2024,1830.73
+P0137,Brand_30,Men Casualwear,Watches,816.28,01-11-2025,379.89
+P0138,Brand_29,Women Ethnicwear,Tops,5652.33,13-04-2026,2574.95
+P0139,Brand_03,Men Casualwear,Sandals,2017.15,09-05-2026,629.31
+P0140,Brand_11,Beauty,Dresses,6181.79,31-05-2024,2910.51
+P0141,Brand_08,Kidswear,Sandals,5339.13,29-12-2024,2493.55
+P0142,Brand_15,Accessories,Trousers,6876.86,21-08-2024,3397.49
+P0143,Brand_28,Men Casualwear,Watches,5872.55,14-07-2025,2007.98
+P0144,Brand_12,Kidswear,Kurtas,1913.44,13-10-2024,904.65
+P0145,Brand_20,Men Formalwear,Tops,3040.74,14-12-2024,1354.01
+P0146,Brand_05,Men Casualwear,Watches,4966.42,02-05-2024,2437.08
+P0147,Brand_18,Accessories,Kurtas,2416.64,08-05-2025,1235.81
+P0148,Brand_11,Men Formalwear,Bags,3960.57,17-04-2025,1646.23
+P0149,Brand_28,Beauty,Watches,1891.24,01-05-2025,872.42
+P0150,Brand_24,Women Westernwear,Tops,4740.77,28-10-2024,2021.61
+P0151,Brand_07,Men Casualwear,Watches,2591.3,28-10-2025,1412.15
+P0152,Brand_19,Kidswear,Kurtas,668.69,20-06-2025,371.03
+P0153,Brand_11,Women Westernwear,Shirts,6783.09,04-06-2024,2670.78
+P0154,Brand_14,Accessories,Sandals,5953.15,20-11-2024,2280.38
+P0155,Brand_14,Men Formalwear,Sneakers,2333.9,05-08-2025,1206.77
+P0156,Brand_25,Kidswear,Dresses,1167.49,12-04-2024,639.42
+P0157,Brand_09,Men Formalwear,Dresses,5225.02,06-11-2024,1585.67
+P0158,Brand_01,Men Formalwear,Jeans,1777.51,08-02-2026,776.38
+P0159,Brand_06,Men Formalwear,Dresses,4355.54,24-01-2025,1735.57
+P0160,Brand_25,Women Westernwear,Sandals,5518.83,25-03-2025,3009.34
+P0161,Brand_09,Accessories,Tops,2124.24,24-08-2025,734.84
+P0162,Brand_02,Footwear,Tops,2206.07,10-10-2024,1211.22
+P0163,Brand_13,Footwear,Skincare,711.8,29-12-2025,364.19
+P0164,Brand_27,Men Casualwear,Shirts,2441.98,15-01-2024,1391.29
+P0165,Brand_27,Accessories,Sneakers,4301.92,20-02-2025,2653.76
+P0166,Brand_29,Men Casualwear,Jeans,1342.84,11-06-2025,607.63
+P0167,Brand_21,Women Westernwear,Sandals,6684.65,29-07-2024,3501.5
+P0168,Brand_25,Women Ethnicwear,Sandals,5139.19,21-11-2025,2709.32
+P0169,Brand_24,Accessories,Dresses,1665.14,11-03-2024,949.57
+P0170,Brand_01,Women Ethnicwear,Tops,3854.13,27-07-2025,1795.25
+P0171,Brand_13,Accessories,Sneakers,2921.65,12-07-2025,977.14
+P0172,Brand_16,Men Formalwear,Skincare,2860.77,25-11-2025,1754.79
+P0173,Brand_14,Women Ethnicwear,Watches,4050.92,01-07-2024,1288.95
+P0174,Brand_25,Kidswear,Shirts,1023.61,16-05-2024,622.31
+P0175,Brand_30,Beauty,Tops,1741.6,26-05-2025,664.79
+P0176,Brand_17,Beauty,Skincare,1301.86,07-05-2026,595.72
+P0177,Brand_03,Footwear,Kurtas,1464.66,23-11-2025,884.96
+P0178,Brand_11,Accessories,Shirts,4688.96,05-07-2024,2421.99
+P0179,Brand_06,Women Westernwear,Tops,6973.3,25-12-2024,3398.64
+P0180,Brand_15,Women Westernwear,Sneakers,4661.41,23-08-2024,1884.54
+P0181,Brand_08,Footwear,Skincare,6896.65,18-11-2025,2714.31
+P0182,Brand_03,Beauty,Skincare,4164.95,27-03-2025,1293.17
+P0183,Brand_06,Footwear,Dresses,2197.17,20-01-2025,1071.4
+P0184,Brand_15,Men Formalwear,Bags,6143.44,05-01-2024,2688.57
+P0185,Brand_05,Beauty,Jeans,749.18,12-07-2025,278.53
+P0186,Brand_01,Women Ethnicwear,Tops,985.27,25-01-2025,416.72
+P0187,Brand_09,Footwear,Trousers,6648.08,04-02-2024,3996.17
+P0188,Brand_20,Men Formalwear,Sandals,4655.24,21-06-2024,2660.41
+P0189,Brand_19,Men Formalwear,Jeans,6523.05,02-10-2025,2855.34
+P0190,Brand_12,Women Westernwear,Watches,1189.34,22-10-2025,729.76
+P0191,Brand_20,Kidswear,Watches,5446.35,11-03-2025,2439.3
+P0192,Brand_06,Accessories,Shirts,1872.23,30-10-2025,770.84
+P0193,Brand_22,Kidswear,Trousers,2599.47,13-10-2025,1102.53
+P0194,Brand_01,Accessories,Sandals,6322.24,27-06-2025,3666.12
+P0195,Brand_05,Beauty,Shirts,3054.41,02-07-2024,1178.03
+P0196,Brand_28,Men Casualwear,Sneakers,4791.6,06-01-2025,1778.03
+P0197,Brand_15,Women Ethnicwear,Shirts,6243.75,21-12-2025,3792.3
+P0198,Brand_17,Footwear,Kurtas,6133.86,30-09-2024,3281.41
+P0199,Brand_12,Kidswear,Shirts,358.68,05-08-2025,195.27
+P0200,Brand_20,Men Casualwear,Sneakers,1359.04,30-12-2025,729.66
+P0201,Brand_23,Kidswear,Tops,6453.76,15-04-2025,3346.47
+P0202,Brand_24,Women Westernwear,Trousers,4067.19,23-03-2025,1338.92
+P0203,Brand_08,Men Casualwear,Jeans,3516.34,14-06-2024,1902.96
+P0204,Brand_19,Beauty,Bags,736.23,13-03-2025,279.51
+P0205,Brand_24,Men Formalwear,Jeans,466.85,06-02-2024,159.84
+P0206,Brand_13,Accessories,Skincare,6686.88,10-04-2024,4109.5
+P0207,Brand_12,Men Casualwear,Skincare,3473.8,23-04-2025,1073.11
+P0208,Brand_19,Accessories,Jeans,5568,11-07-2024,1726.77
+P0209,Brand_18,Men Casualwear,Sneakers,1773.01,02-11-2024,707.74
+P0210,Brand_08,Women Westernwear,Skincare,1887.38,13-11-2024,1076.08
+P0211,Brand_29,Footwear,Shirts,4052.71,21-02-2025,2484.08
+P0212,Brand_17,Footwear,Dresses,6168.37,08-09-2025,2084.47
+P0213,Brand_17,Footwear,Dresses,2232.49,28-01-2025,952.25
+P0214,Brand_07,Women Ethnicwear,Sneakers,2501.96,15-01-2026,1338.49
+P0215,Brand_21,Men Formalwear,Shirts,3988.21,01-03-2025,2020.3
+P0216,Brand_28,Women Ethnicwear,Jeans,567.04,25-05-2026,212.46
+P0217,Brand_22,Accessories,Bags,2836.71,31-05-2026,1149.85
+P0218,Brand_16,Women Ethnicwear,Bags,4026.1,11-01-2025,1973.59
+P0219,Brand_20,Kidswear,Trousers,331.34,06-11-2025,103.16
+P0220,Brand_08,Women Ethnicwear,Watches,4573.62,03-02-2025,2481.8
+P0221,Brand_02,Footwear,Sneakers,640.44,10-02-2026,248.57
+P0222,Brand_20,Men Casualwear,Trousers,5122.72,06-11-2025,2894.7
+P0223,Brand_06,Women Ethnicwear,Trousers,5670.25,25-10-2024,2941.58
+P0224,Brand_03,Men Casualwear,Shirts,5918.92,10-10-2024,2998.13
+P0225,Brand_24,Women Ethnicwear,Dresses,4810.7,15-02-2026,2624.5
+P0226,Brand_14,Beauty,Kurtas,4061.52,21-04-2025,1316.11
+P0227,Brand_26,Accessories,Kurtas,2359.66,04-09-2025,904.2
+P0228,Brand_26,Men Casualwear,Kurtas,3143.91,20-08-2025,1468.07
+P0229,Brand_04,Men Formalwear,Sandals,882.28,26-05-2024,484.1
+P0230,Brand_24,Women Westernwear,Kurtas,5036.58,27-07-2024,2879.4
+P0231,Brand_11,Men Formalwear,Watches,464.39,05-03-2026,196.1
+P0232,Brand_22,Kidswear,Watches,3069.03,03-09-2024,1700.14
+P0233,Brand_02,Footwear,Skincare,3690.61,04-02-2026,1367.33
+P0234,Brand_15,Kidswear,Shirts,4654.6,10-11-2024,1519.16
+P0235,Brand_19,Accessories,Watches,2598.43,16-01-2026,984.56
+P0236,Brand_14,Women Ethnicwear,Kurtas,3265.68,24-05-2025,1923.51
+P0237,Brand_17,Women Ethnicwear,Kurtas,4234.42,28-03-2024,2007.5
+P0238,Brand_01,Men Casualwear,Skincare,6484.27,26-08-2024,2944.06
+P0239,Brand_01,Kidswear,Tops,4801.21,20-04-2026,2582.41
+P0240,Brand_19,Women Westernwear,Watches,2003.71,02-07-2024,607.58
+P0241,Brand_13,Women Ethnicwear,Shirts,5975.67,19-07-2024,2018.92
+P0242,Brand_18,Kidswear,Shirts,667.93,11-05-2024,221.67
+P0243,Brand_11,Women Westernwear,Tops,2123.4,21-06-2025,719.69
+P0244,Brand_01,Men Casualwear,Dresses,1023.62,14-12-2025,455.62
+P0245,Brand_22,Accessories,Sandals,3294.16,05-04-2026,1284.12
+P0246,Brand_05,Women Ethnicwear,Jeans,4566.41,20-02-2026,2518.06
+P0247,Brand_24,Women Westernwear,Sneakers,3856.67,18-02-2026,2192.49
+P0248,Brand_01,Beauty,Sandals,5734.46,08-03-2026,3417.63
+P0249,Brand_28,Women Ethnicwear,Sandals,4101.17,15-05-2025,1487.66
+P0250,Brand_08,Beauty,Sneakers,1857.87,25-12-2025,856.32
+P0251,Brand_27,Footwear,Sneakers,3893.03,13-07-2025,1228.58
+P0252,Brand_01,Women Westernwear,Kurtas,5226.78,01-05-2024,1969.3
+P0253,Brand_14,Footwear,Jeans,3668.79,22-01-2024,1822.75
+P0254,Brand_13,Men Casualwear,Tops,3260.2,27-03-2024,1418.73
+P0255,Brand_05,Kidswear,Watches,3843.95,31-10-2024,2002.79
+P0256,Brand_15,Men Formalwear,Tops,3970.99,16-03-2025,2257.72
+P0257,Brand_07,Beauty,Watches,2379.73,17-07-2025,759.26
+P0258,Brand_14,Men Casualwear,Jeans,6022.32,04-04-2025,3615.54
+P0259,Brand_12,Accessories,Kurtas,1690.48,19-11-2024,530.08
+P0260,Brand_06,Men Casualwear,Dresses,518.98,08-10-2025,318.72
+P0261,Brand_24,Footwear,Dresses,5267,29-01-2026,2654.79
+P0262,Brand_16,Accessories,Sneakers,5942.5,15-07-2024,1865.09
+P0263,Brand_26,Kidswear,Sneakers,4605.33,18-08-2024,1961.69
+P0264,Brand_25,Accessories,Bags,3440.93,01-04-2026,1316.59
+P0265,Brand_08,Beauty,Bags,6832.88,05-05-2026,3795.96
+P0266,Brand_09,Beauty,Trousers,2783.09,30-09-2024,1035.71
+P0267,Brand_29,Men Formalwear,Bags,3018.52,25-03-2025,1703.62
+P0268,Brand_10,Beauty,Shirts,4259.46,24-05-2025,1703.57
+P0269,Brand_03,Footwear,Tops,3182.86,13-07-2025,1962.32
+P0270,Brand_17,Footwear,Shirts,4019.5,01-02-2026,1553.66
+P0271,Brand_30,Men Casualwear,Trousers,6774.98,03-04-2024,3517.48
+P0272,Brand_08,Men Casualwear,Watches,1890.24,06-04-2025,1051.09
+P0273,Brand_20,Women Ethnicwear,Watches,1294.37,09-07-2024,477.97
+P0274,Brand_11,Beauty,Shirts,3136.79,26-10-2025,1017.08
+P0275,Brand_12,Women Ethnicwear,Sandals,3675.79,10-06-2025,1751.14
+P0276,Brand_14,Women Ethnicwear,Bags,5077.42,22-10-2025,2623.33
+P0277,Brand_05,Men Casualwear,Trousers,6698.66,09-03-2026,3761.49
+P0278,Brand_12,Women Westernwear,Skincare,4913.09,27-11-2025,1902.76
+P0279,Brand_09,Beauty,Tops,6913.07,23-01-2026,4003.58
+P0280,Brand_25,Women Westernwear,Kurtas,1949.47,16-12-2025,1156.12
+P0281,Brand_07,Men Formalwear,Trousers,1698.56,05-07-2025,933.09
+P0282,Brand_26,Beauty,Tops,2352.78,12-12-2024,711.55
+P0283,Brand_01,Footwear,Sneakers,5572.73,23-10-2024,1827.35
+P0284,Brand_13,Footwear,Trousers,1548.65,16-11-2024,959.04
+P0285,Brand_09,Men Casualwear,Trousers,1613.47,19-06-2025,862.99
+P0286,Brand_14,Men Formalwear,Trousers,3057.63,09-12-2025,1530.57
+P0287,Brand_24,Accessories,Trousers,2426.55,19-11-2024,1427.87
+P0288,Brand_29,Men Formalwear,Tops,4630.4,26-05-2025,1447.86
+P0289,Brand_22,Beauty,Dresses,6263.12,31-12-2024,3396.87
+P0290,Brand_16,Accessories,Sandals,1228.03,20-06-2025,625.68
+P0291,Brand_16,Women Westernwear,Skincare,3962.26,23-12-2025,2264.16
+P0292,Brand_30,Women Ethnicwear,Sneakers,891.28,29-12-2024,489.25
+P0293,Brand_30,Men Formalwear,Shirts,1783.01,16-12-2024,811.59
+P0294,Brand_23,Men Formalwear,Shirts,2369.98,26-06-2024,764.82
+P0295,Brand_05,Women Westernwear,Skincare,4178.99,15-03-2025,2469.82
+P0296,Brand_08,Accessories,Trousers,4016.69,07-02-2025,2186.37
+P0297,Brand_09,Footwear,Kurtas,4607.54,21-05-2024,1907.74
+P0298,Brand_07,Beauty,Dresses,5785.67,05-05-2026,3557.36
+P0299,Brand_30,Beauty,Dresses,1553.44,28-01-2026,620.68
+P0300,Brand_05,Men Formalwear,Shirts,5279.66,13-09-2024,2209.96
+P0301,Brand_26,Footwear,Watches,4768.04,12-04-2026,2917.55
+P0302,Brand_25,Women Westernwear,Tops,833.06,27-08-2024,428.02
+P0303,Brand_16,Beauty,Bags,2608.46,04-01-2025,1516.41
+P0304,Brand_10,Kidswear,Skincare,484.59,25-04-2024,283.04
+P0305,Brand_08,Accessories,Bags,903.24,23-06-2025,426.03
+P0306,Brand_21,Men Formalwear,Kurtas,2200.37,28-02-2025,848.09
+P0307,Brand_21,Women Ethnicwear,Skincare,1927.88,23-08-2024,1101.17
+P0308,Brand_17,Kidswear,Skincare,6330.16,11-09-2024,2915.7
+P0309,Brand_18,Footwear,Sandals,6287.38,04-04-2026,3021.67
+P0310,Brand_25,Accessories,Bags,4170.71,29-08-2025,1973.74
+P0311,Brand_23,Men Casualwear,Sneakers,5223.74,14-05-2024,1583.15
+P0312,Brand_23,Accessories,Tops,6996.33,29-04-2024,2201.59
+P0313,Brand_09,Accessories,Tops,3047.29,02-03-2024,1515.24
+P0314,Brand_02,Women Ethnicwear,Bags,3799.25,06-08-2024,2105.62
+P0315,Brand_14,Footwear,Bags,4661.7,13-10-2025,2080.29
+P0316,Brand_11,Men Formalwear,Sneakers,6466.74,24-02-2024,2334.04
+P0317,Brand_11,Beauty,Watches,5639.01,07-08-2024,2425.47
+P0318,Brand_16,Men Casualwear,Sandals,730.63,06-02-2024,398.82
+P0319,Brand_28,Women Ethnicwear,Shirts,5075.77,26-07-2025,1699.16
+P0320,Brand_25,Men Casualwear,Skincare,1986.97,19-12-2025,952.28
+P0321,Brand_21,Footwear,Sneakers,2006.84,11-04-2025,1053.01
+P0322,Brand_22,Men Casualwear,Trousers,3965.5,09-03-2026,1717.33
+P0323,Brand_13,Men Formalwear,Bags,4964.22,30-08-2025,2444.4
+P0324,Brand_17,Men Formalwear,Watches,1365.83,04-11-2025,795.89
+P0325,Brand_14,Beauty,Bags,2406.23,03-10-2024,885.73
+P0326,Brand_25,Men Formalwear,Bags,5097.01,02-02-2026,1749.43
+P0327,Brand_30,Women Westernwear,Watches,1317.41,10-07-2025,420.87
+P0328,Brand_14,Beauty,Sneakers,5992.05,17-03-2024,3190.1
+P0329,Brand_22,Women Westernwear,Kurtas,3354.49,13-03-2024,1973.01
+P0330,Brand_02,Men Casualwear,Tops,4225.13,03-03-2026,2200.98
+P0331,Brand_13,Beauty,Bags,837.67,30-08-2024,513.04
+P0332,Brand_27,Men Casualwear,Sandals,6694.16,15-02-2025,3525.11
+P0333,Brand_21,Women Ethnicwear,Tops,6379.47,01-11-2025,2502.78
+P0334,Brand_16,Men Casualwear,Bags,1572.53,08-11-2025,600.37
+P0335,Brand_07,Men Formalwear,Tops,4741.79,24-01-2024,2434.12
+P0336,Brand_25,Beauty,Bags,5612.89,27-06-2025,2897.71
+P0337,Brand_30,Beauty,Sandals,1116.18,16-03-2026,521.95
+P0338,Brand_12,Women Ethnicwear,Skincare,4167.94,04-11-2024,1953.12
+P0339,Brand_25,Accessories,Skincare,5997.04,23-04-2025,2598.67
+P0340,Brand_18,Beauty,Jeans,3693.98,21-08-2024,1521.83
+P0341,Brand_12,Women Westernwear,Skincare,6488.36,28-09-2025,3262.98
+P0342,Brand_10,Men Casualwear,Shirts,619.27,14-04-2024,333.91
+P0343,Brand_16,Accessories,Watches,6457.71,03-04-2025,3618.19
+P0344,Brand_13,Footwear,Tops,6846.36,29-12-2024,2728.33
+P0345,Brand_19,Men Casualwear,Dresses,1343.81,19-07-2025,771.99
+P0346,Brand_05,Accessories,Bags,3186.37,11-03-2025,1264.6
+P0347,Brand_15,Beauty,Tops,4458.12,15-05-2026,1772.37
+P0348,Brand_23,Footwear,Trousers,6283.7,17-05-2026,3505.81
+P0349,Brand_26,Women Ethnicwear,Tops,1367.83,07-09-2024,834.65
+P0350,Brand_09,Beauty,Sandals,2536.99,02-02-2024,1517.91
+P0351,Brand_19,Women Westernwear,Trousers,5645.13,10-03-2025,1894.2
+P0352,Brand_10,Kidswear,Bags,3046.03,04-06-2025,1195
+P0353,Brand_24,Women Westernwear,Skincare,4352.12,24-10-2025,2363.93
+P0354,Brand_11,Women Ethnicwear,Bags,4051.04,08-04-2025,2260.47
+P0355,Brand_21,Men Formalwear,Bags,6819.25,01-06-2025,3146.17
+P0356,Brand_13,Men Casualwear,Dresses,1247.26,21-01-2024,380.6
+P0357,Brand_09,Men Casualwear,Jeans,6653.55,03-11-2025,3064.57
+P0358,Brand_18,Kidswear,Shirts,4078.81,17-10-2024,1264.3
+P0359,Brand_19,Men Casualwear,Shirts,6356.82,05-12-2024,2479.46
+P0360,Brand_21,Accessories,Shirts,1089.21,08-01-2025,555.71
+P0361,Brand_24,Women Westernwear,Bags,4597.07,04-03-2024,1577.13
+P0362,Brand_21,Footwear,Trousers,5927.74,11-03-2025,3129.83
+P0363,Brand_26,Women Westernwear,Skincare,5571.11,02-12-2024,2779.11
+P0364,Brand_13,Women Westernwear,Tops,365.59,24-07-2024,159.95
+P0365,Brand_16,Women Westernwear,Bags,3328.78,04-08-2024,1395.06
+P0366,Brand_15,Men Casualwear,Sandals,1071.82,31-01-2024,635.26
+P0367,Brand_18,Men Formalwear,Watches,1322.93,21-02-2026,631.06
+P0368,Brand_05,Accessories,Sneakers,5031.13,16-09-2024,2940.43
+P0369,Brand_26,Accessories,Sneakers,6708.08,10-02-2026,2897.77
+P0370,Brand_16,Beauty,Bags,4547.45,07-01-2026,2229.55
+P0371,Brand_17,Men Formalwear,Bags,984.93,07-02-2025,596.35
+P0372,Brand_27,Men Casualwear,Shirts,1933.78,13-12-2025,656.92
+P0373,Brand_14,Men Casualwear,Skincare,2837.46,05-07-2024,1089.84
+P0374,Brand_14,Women Westernwear,Trousers,1138.9,08-06-2024,675.76
+P0375,Brand_17,Beauty,Tops,5980.39,03-03-2026,2601.72
+P0376,Brand_29,Accessories,Jeans,1602.18,24-07-2025,620.13
+P0377,Brand_08,Footwear,Sandals,1166.99,30-08-2025,722.54
+P0378,Brand_05,Footwear,Trousers,5161.09,25-03-2026,1717.13
+P0379,Brand_04,Men Casualwear,Trousers,1148.78,13-01-2024,569.44
+P0380,Brand_23,Kidswear,Skincare,3048.14,31-05-2024,1683.13
+P0381,Brand_01,Kidswear,Skincare,3752.91,28-04-2026,2070.69
+P0382,Brand_22,Men Formalwear,Sneakers,836.54,23-04-2024,369.24
+P0383,Brand_27,Accessories,Sneakers,4022.78,30-01-2025,1263.42
+P0384,Brand_21,Men Casualwear,Watches,3516.1,20-01-2024,2001.11
+P0385,Brand_06,Women Ethnicwear,Sandals,4777.39,14-10-2024,2660.41
+P0386,Brand_20,Men Casualwear,Skincare,1767.28,01-06-2024,664.43
+P0387,Brand_14,Accessories,Kurtas,2688.42,13-08-2024,1099.48
+P0388,Brand_01,Men Formalwear,Dresses,4718.69,18-12-2025,2189.61
+P0389,Brand_06,Accessories,Trousers,537.5,31-08-2024,180.88
+P0390,Brand_23,Men Casualwear,Bags,1074.83,18-12-2025,604.68
+P0391,Brand_17,Men Formalwear,Skincare,2198.8,28-02-2026,1308.44
+P0392,Brand_15,Women Ethnicwear,Skincare,1011.59,21-04-2025,403.24
+P0393,Brand_24,Accessories,Skincare,563.73,20-04-2025,335.81
+P0394,Brand_16,Men Casualwear,Skincare,6914.46,21-10-2024,3846.36
+P0395,Brand_30,Women Ethnicwear,Jeans,3352.59,11-08-2025,1786.61
+P0396,Brand_02,Women Westernwear,Watches,3874.68,12-12-2025,2364.06
+P0397,Brand_09,Beauty,Shirts,2006.86,31-01-2026,810.55
+P0398,Brand_06,Accessories,Bags,350.5,21-06-2024,207.85
+P0399,Brand_13,Kidswear,Sandals,5328.85,28-08-2025,1766.46
+P0400,Brand_28,Women Westernwear,Sneakers,5148.14,03-05-2024,2331.92
+P0401,Brand_13,Footwear,Watches,6815.02,08-03-2025,3248.34
+P0402,Brand_10,Men Formalwear,Jeans,440.38,19-03-2024,149.42
+P0403,Brand_03,Beauty,Bags,1217.04,30-04-2025,652.28
+P0404,Brand_12,Beauty,Shirts,5070.35,20-01-2026,2292.09
+P0405,Brand_07,Women Ethnicwear,Shirts,2510.49,21-12-2025,1119.11
+P0406,Brand_06,Women Westernwear,Skincare,726.28,22-09-2025,353.02
+P0407,Brand_05,Footwear,Trousers,2315.42,24-05-2025,794.44
+P0408,Brand_19,Footwear,Jeans,886.7,04-07-2025,322.77
+P0409,Brand_22,Kidswear,Dresses,5910.96,29-03-2024,2115.05
+P0410,Brand_23,Accessories,Dresses,6174.45,03-10-2025,3733.19
+P0411,Brand_02,Women Ethnicwear,Sandals,4566.16,24-08-2025,2499.61
+P0412,Brand_28,Footwear,Watches,2882.5,06-05-2024,1352.88
+P0413,Brand_16,Men Formalwear,Bags,5449.89,11-07-2025,2785.03
+P0414,Brand_17,Men Formalwear,Shirts,4530.65,05-12-2024,2301.54
+P0415,Brand_27,Women Ethnicwear,Kurtas,5605.28,25-03-2025,2152.15
+P0416,Brand_09,Accessories,Dresses,3722.08,19-12-2025,1219.78
+P0417,Brand_16,Women Westernwear,Skincare,6719.91,11-10-2024,3209.3
+P0418,Brand_03,Kidswear,Kurtas,2242.23,19-03-2026,861.41
+P0419,Brand_15,Kidswear,Watches,4347.04,02-01-2025,2519.16
+P0420,Brand_08,Accessories,Bags,5712.95,28-03-2025,2145.42
+P0421,Brand_06,Women Ethnicwear,Jeans,6287.95,26-01-2024,3039.06
+P0422,Brand_19,Men Formalwear,Watches,6642.21,17-04-2024,2885.57
+P0423,Brand_04,Women Ethnicwear,Sneakers,2945.57,05-09-2024,1583.92
+P0424,Brand_30,Footwear,Jeans,4984.6,13-05-2026,3011.89
+P0425,Brand_07,Accessories,Sandals,2243.32,17-08-2024,968.45
+P0426,Brand_03,Footwear,Skincare,4649.84,14-12-2024,1460.95
+P0427,Brand_14,Women Ethnicwear,Shirts,1533.32,23-01-2026,784.54
+P0428,Brand_12,Men Casualwear,Trousers,3122.72,08-10-2024,1065.91
+P0429,Brand_20,Women Westernwear,Kurtas,6464.59,17-12-2025,2155.56
+P0430,Brand_21,Men Formalwear,Jeans,5732.07,15-04-2024,2933.09
+P0431,Brand_18,Men Casualwear,Shirts,3625.59,27-04-2024,1206.96
+P0432,Brand_18,Accessories,Tops,1282.86,12-01-2024,437.72
+P0433,Brand_24,Women Westernwear,Sneakers,2969.43,20-04-2024,1308.05
+P0434,Brand_20,Men Casualwear,Dresses,1228.15,16-06-2025,546.21
+P0435,Brand_05,Women Westernwear,Trousers,758.14,21-03-2024,449.11
+P0436,Brand_14,Kidswear,Kurtas,6372.63,24-06-2025,2474.89
+P0437,Brand_21,Men Casualwear,Kurtas,3591.59,12-06-2025,1538.28
+P0438,Brand_09,Kidswear,Jeans,897.9,25-07-2024,472.66
+P0439,Brand_26,Beauty,Bags,5100.68,02-02-2024,2880.08
+P0440,Brand_15,Men Casualwear,Sandals,796.02,22-05-2024,327.74
+P0441,Brand_10,Footwear,Jeans,2953.31,06-05-2024,1482.4
+P0442,Brand_12,Women Ethnicwear,Sandals,1841.95,10-04-2025,920.5
+P0443,Brand_19,Kidswear,Dresses,1402.02,01-04-2026,556.64
+P0444,Brand_22,Kidswear,Trousers,3873.78,19-01-2025,1309.18
+P0445,Brand_08,Men Casualwear,Dresses,5120.92,12-07-2025,2654.71
+P0446,Brand_06,Women Westernwear,Jeans,3563.17,24-09-2024,1374.61
+P0447,Brand_03,Men Formalwear,Shirts,5798.38,21-03-2024,2330.08
+P0448,Brand_15,Accessories,Sandals,6445.49,11-07-2024,3114.16
+P0449,Brand_28,Beauty,Bags,5707.11,26-02-2025,2005.81
+P0450,Brand_29,Women Ethnicwear,Trousers,6707.49,27-01-2026,2530.6
+P0451,Brand_17,Women Ethnicwear,Sneakers,6523.54,07-08-2024,2888.27
+P0452,Brand_16,Women Westernwear,Shirts,5876.86,17-05-2026,3415.13
+P0453,Brand_16,Accessories,Tops,2259.64,17-07-2025,1236.3
+P0454,Brand_08,Men Casualwear,Skincare,1467.02,09-11-2024,589.2
+P0455,Brand_13,Kidswear,Trousers,5169.98,02-07-2025,2050.73
+P0456,Brand_29,Men Casualwear,Tops,5964.04,07-09-2025,3673.55
+P0457,Brand_19,Kidswear,Trousers,5813.93,27-08-2025,2959.77
+P0458,Brand_08,Kidswear,Shirts,4611.27,02-02-2026,2394.96
+P0459,Brand_03,Beauty,Kurtas,5859.12,06-08-2025,1861.09
+P0460,Brand_23,Women Westernwear,Tops,5037.01,24-01-2024,1680.3
+P0461,Brand_28,Women Ethnicwear,Kurtas,4756.95,28-11-2024,1875.31
+P0462,Brand_04,Women Westernwear,Jeans,611.06,11-03-2026,347.96
+P0463,Brand_12,Beauty,Jeans,3384.18,01-07-2024,2001.45
+P0464,Brand_26,Beauty,Shirts,525.77,16-03-2025,189.87
+P0465,Brand_08,Kidswear,Dresses,917.88,17-03-2025,485.14
+P0466,Brand_06,Kidswear,Watches,3923.73,06-05-2025,2274.68
+P0467,Brand_12,Men Casualwear,Tops,617.11,05-02-2026,358.69
+P0468,Brand_12,Men Formalwear,Sandals,6417.58,21-04-2025,2867.49
+P0469,Brand_15,Accessories,Trousers,3316.28,01-01-2024,1269.5
+P0470,Brand_29,Accessories,Sneakers,4988.78,02-08-2024,3023.25
+P0471,Brand_30,Men Casualwear,Kurtas,1289.23,10-07-2025,500.87
+P0472,Brand_18,Women Ethnicwear,Bags,5977.89,20-11-2025,2276.75
+P0473,Brand_03,Women Ethnicwear,Watches,3502.05,24-07-2025,1281.11
+P0474,Brand_08,Accessories,Trousers,4042.8,07-10-2025,1901.78
+P0475,Brand_06,Men Casualwear,Dresses,4643.84,31-07-2024,1552.43
+P0476,Brand_01,Beauty,Jeans,3916.32,25-03-2024,1890.09
+P0477,Brand_12,Accessories,Jeans,4072.35,16-04-2026,2451.48
+P0478,Brand_01,Kidswear,Tops,5287.31,11-05-2025,2440.57
+P0479,Brand_18,Men Formalwear,Dresses,5702.36,13-10-2025,3472.23
+P0480,Brand_09,Beauty,Dresses,2350.31,24-04-2026,1386.27
+P0481,Brand_22,Women Westernwear,Trousers,6476.73,09-06-2024,3585.11
+P0482,Brand_16,Kidswear,Kurtas,2670.11,07-02-2026,1320.58
+P0483,Brand_29,Kidswear,Skincare,2123.58,19-11-2024,1235.53
+P0484,Brand_15,Men Formalwear,Kurtas,2385.58,06-07-2025,1139.34
+P0485,Brand_05,Men Casualwear,Jeans,2701.05,07-12-2024,989.41
+P0486,Brand_28,Beauty,Sandals,2422.44,24-06-2024,1443.91
+P0487,Brand_10,Men Formalwear,Kurtas,5952.13,14-02-2026,2742.15
+P0488,Brand_23,Beauty,Dresses,4058.72,02-11-2024,2396.59
+P0489,Brand_24,Women Ethnicwear,Dresses,6782.22,22-01-2024,2887.91
+P0490,Brand_28,Men Casualwear,Sandals,861.5,12-05-2024,351
+P0491,Brand_20,Accessories,Shirts,4412.67,28-04-2026,2405.42
+P0492,Brand_16,Kidswear,Bags,942.36,25-12-2025,474.03
+P0493,Brand_12,Women Ethnicwear,Skincare,3373.3,09-08-2025,1486.65
+P0494,Brand_14,Accessories,Jeans,2863.32,17-11-2025,1664.01
+P0495,Brand_24,Women Ethnicwear,Dresses,4860.19,26-07-2025,2261.47
+P0496,Brand_17,Accessories,Tops,5293.48,13-03-2026,1609.71
+P0497,Brand_02,Men Casualwear,Sneakers,1894.23,28-03-2024,988.46
+P0498,Brand_12,Men Casualwear,Jeans,1596.89,25-02-2024,511.34
+P0499,Brand_28,Beauty,Tops,3109.72,04-09-2025,1411.67
+P0500,Brand_07,Accessories,Bags,1920.31,30-04-2026,694.13
+P0501,Brand_15,Men Formalwear,Trousers,4832.38,27-05-2025,1823.91
+P0502,Brand_26,Men Casualwear,Trousers,3767.57,02-05-2026,2311.56
+P0503,Brand_09,Kidswear,Dresses,5839.75,19-12-2024,1963.99
+P0504,Brand_21,Kidswear,Shirts,6873.52,17-08-2025,3728.65
+P0505,Brand_24,Footwear,Sneakers,2832.32,25-03-2025,1427.44
+P0506,Brand_10,Women Ethnicwear,Trousers,6409.38,16-02-2026,2322.85
+P0507,Brand_27,Kidswear,Skincare,5506.05,24-07-2025,3299.82
+P0508,Brand_14,Footwear,Sandals,1298.13,21-01-2025,473.11
+P0509,Brand_09,Footwear,Trousers,5899.72,03-08-2024,2743.29
+P0510,Brand_07,Women Ethnicwear,Bags,3525.1,03-10-2024,1949.26
+P0511,Brand_08,Kidswear,Trousers,5050.38,06-03-2024,2749.14
+P0512,Brand_17,Beauty,Kurtas,5006.5,16-05-2024,2014.15
+P0513,Brand_07,Women Westernwear,Trousers,6234.97,24-03-2025,3545
+P0514,Brand_11,Men Casualwear,Skincare,5398.8,28-01-2024,3281.77
+P0515,Brand_22,Men Casualwear,Sneakers,5823.98,19-02-2025,2630.61
+P0516,Brand_27,Accessories,Tops,2449.11,07-02-2024,1245.96
+P0517,Brand_21,Men Formalwear,Watches,6819.02,22-05-2024,2841.11
+P0518,Brand_16,Accessories,Shirts,4731.67,01-09-2025,1955.63
+P0519,Brand_21,Beauty,Tops,5482.73,26-01-2024,2468.92
+P0520,Brand_13,Men Casualwear,Watches,6053.5,23-10-2024,2197.92
+P0521,Brand_09,Men Formalwear,Sneakers,1128.35,16-06-2024,587.43
+P0522,Brand_23,Accessories,Skincare,2552.95,17-02-2024,901.15
+P0523,Brand_05,Men Formalwear,Watches,5899.77,02-07-2024,1779.71
+P0524,Brand_28,Beauty,Jeans,6476.28,08-04-2024,2853.66
+P0525,Brand_13,Women Ethnicwear,Watches,5364.83,12-03-2024,1740.64
+P0526,Brand_25,Men Formalwear,Skincare,3530.47,09-08-2025,1694.56
+P0527,Brand_03,Footwear,Skincare,1981.52,20-04-2024,924.41
+P0528,Brand_15,Men Casualwear,Shirts,3816.68,07-04-2026,1312.65
+P0529,Brand_13,Accessories,Watches,2960.91,05-03-2025,1121.35
+P0530,Brand_11,Women Westernwear,Shirts,6232.73,25-12-2024,1918.59
+P0531,Brand_16,Accessories,Skincare,4099.68,11-02-2026,2009.11
+P0532,Brand_20,Women Ethnicwear,Kurtas,2925.84,16-11-2025,1151.95
+P0533,Brand_29,Men Formalwear,Dresses,3638.82,05-01-2025,1921.86
+P0534,Brand_25,Footwear,Sneakers,6553.9,08-05-2026,3287.07
+P0535,Brand_07,Men Casualwear,Bags,4407.83,13-04-2025,1849.3
+P0536,Brand_30,Footwear,Jeans,1833.16,16-09-2025,562.69
+P0537,Brand_15,Kidswear,Tops,3649.52,05-05-2026,1468.76
+P0538,Brand_14,Men Formalwear,Sneakers,3418.91,29-09-2025,1381.09
+P0539,Brand_01,Footwear,Sandals,2378.71,05-06-2025,966.86
+P0540,Brand_21,Kidswear,Trousers,5232.21,27-06-2025,3166.02
+P0541,Brand_27,Kidswear,Watches,2096.52,30-07-2025,739.36
+P0542,Brand_09,Women Ethnicwear,Dresses,3599.08,12-05-2026,1390.75
+P0543,Brand_27,Beauty,Jeans,3254.01,10-09-2025,1842.97
+P0544,Brand_03,Accessories,Shirts,3426.98,21-09-2024,2042.65
+P0545,Brand_30,Kidswear,Trousers,4096.4,20-01-2024,1842.77
+P0546,Brand_08,Accessories,Jeans,4877.09,21-11-2025,2305.96
+P0547,Brand_15,Women Ethnicwear,Kurtas,1257.1,06-03-2025,398.39
+P0548,Brand_01,Accessories,Tops,2230.78,01-01-2025,1246.05
+P0549,Brand_27,Accessories,Skincare,5477.01,04-04-2026,2685.16
+P0550,Brand_16,Footwear,Tops,6380.89,17-05-2024,2892.35
+P0551,Brand_30,Women Ethnicwear,Skincare,598.2,03-02-2024,237.38
+P0552,Brand_12,Women Westernwear,Tops,790.55,14-10-2025,349.43
+P0553,Brand_02,Men Casualwear,Dresses,6555.66,26-03-2026,3509.24
+P0554,Brand_21,Accessories,Dresses,1290.2,01-01-2026,420.41
+P0555,Brand_05,Women Westernwear,Bags,6860.24,07-02-2026,3170.67
+P0556,Brand_19,Beauty,Bags,5848.09,31-01-2026,1819.25
+P0557,Brand_02,Women Westernwear,Skincare,1107.72,27-08-2025,606.06
+P0558,Brand_06,Accessories,Shirts,985.92,24-03-2026,362.35
+P0559,Brand_20,Women Ethnicwear,Shirts,6846.89,28-10-2024,4033.39
+P0560,Brand_21,Women Westernwear,Sneakers,2006.31,19-10-2025,907.55
+P0561,Brand_05,Women Ethnicwear,Trousers,3908.07,22-03-2024,1744.27
+P0562,Brand_06,Footwear,Bags,1881.78,10-04-2025,781.53
+P0563,Brand_26,Accessories,Tops,4323.52,13-09-2024,2011.45
+P0564,Brand_01,Men Formalwear,Tops,5927.19,07-04-2026,2419.29
+P0565,Brand_07,Footwear,Jeans,4700.29,19-01-2025,1951.45
+P0566,Brand_30,Beauty,Shirts,611.33,03-07-2024,221.67
+P0567,Brand_17,Men Formalwear,Sneakers,4286.77,17-05-2025,1759.58
+P0568,Brand_01,Accessories,Trousers,4727.81,09-03-2024,2646.39
+P0569,Brand_27,Men Casualwear,Shirts,1645.02,21-04-2024,622.84
+P0570,Brand_11,Women Westernwear,Skincare,5405.19,15-01-2025,3042.07
+P0571,Brand_22,Women Westernwear,Sandals,4499.19,10-07-2025,2589.82
+P0572,Brand_20,Women Westernwear,Bags,362.97,28-05-2025,186.29
+P0573,Brand_12,Women Ethnicwear,Skincare,6667.72,18-02-2024,2065.79
+P0574,Brand_12,Women Ethnicwear,Sandals,3284.38,22-08-2025,1574.96
+P0575,Brand_17,Women Ethnicwear,Jeans,1855.94,20-02-2024,1051.59
+P0576,Brand_12,Women Westernwear,Trousers,876.52,20-12-2025,365.55
+P0577,Brand_06,Beauty,Shirts,2807.67,04-02-2024,1096.4
+P0578,Brand_22,Women Westernwear,Dresses,2361.05,24-01-2024,951.13
+P0579,Brand_21,Footwear,Dresses,2295.29,01-04-2025,999.33
+P0580,Brand_19,Women Ethnicwear,Tops,5613.45,08-12-2025,1810.08
+P0581,Brand_23,Accessories,Jeans,4626.67,05-11-2025,1739.9
+P0582,Brand_16,Men Casualwear,Watches,1190.46,13-06-2025,603.59
+P0583,Brand_28,Men Formalwear,Dresses,5043.1,06-06-2024,2275.42
+P0584,Brand_27,Beauty,Tops,5146.33,20-04-2026,1951.23
+P0585,Brand_30,Kidswear,Sandals,3744.6,19-01-2024,2238.83
+P0586,Brand_04,Accessories,Skincare,6970.64,02-11-2024,2750.43
+P0587,Brand_04,Men Formalwear,Skincare,2198.31,27-10-2025,750.46
+P0588,Brand_15,Men Casualwear,Tops,690.65,28-06-2025,251.25
+P0589,Brand_21,Men Casualwear,Shirts,492,28-11-2025,194.29
+P0590,Brand_08,Women Ethnicwear,Jeans,2446.67,07-11-2025,1143.13
+P0591,Brand_04,Men Casualwear,Watches,3635.05,08-04-2026,1167.66
+P0592,Brand_02,Accessories,Bags,823.15,31-03-2025,472.14
+P0593,Brand_17,Men Casualwear,Watches,4089.85,25-12-2025,2375.35
+P0594,Brand_30,Men Formalwear,Skincare,6334.83,17-05-2024,2545.79
+P0595,Brand_14,Women Ethnicwear,Sneakers,5637.98,02-06-2024,3090.18
+P0596,Brand_23,Men Casualwear,Skincare,4804.54,13-02-2024,2363.36
+P0597,Brand_02,Women Ethnicwear,Sneakers,4732.6,29-06-2024,2700.15
+P0598,Brand_07,Men Formalwear,Dresses,5192.01,08-04-2024,2017.77
+P0599,Brand_21,Men Casualwear,Skincare,3610.18,27-12-2025,1788.03
+P0600,Brand_13,Kidswear,Jeans,2991.06,12-03-2025,966.9
+P0601,Brand_01,Footwear,Shirts,2353.59,26-01-2025,713.2
+P0602,Brand_07,Men Casualwear,Bags,966.44,18-07-2025,560.44
+P0603,Brand_24,Footwear,Tops,4065.49,13-11-2024,1602.84
+P0604,Brand_21,Kidswear,Tops,3464.87,18-05-2025,1533.31
+P0605,Brand_25,Women Westernwear,Jeans,1095.65,04-01-2024,409.96
+P0606,Brand_11,Men Casualwear,Skincare,2096.41,20-09-2025,1217.13
+P0607,Brand_28,Footwear,Kurtas,5573.26,07-02-2026,2357.77
+P0608,Brand_28,Women Ethnicwear,Sandals,2011.55,04-02-2024,718.76
+P0609,Brand_12,Footwear,Shirts,3151.32,12-03-2024,1558.51
+P0610,Brand_07,Women Westernwear,Jeans,1379.76,30-04-2024,504.64
+P0611,Brand_29,Accessories,Sneakers,1436.97,20-06-2025,550.96
+P0612,Brand_11,Accessories,Jeans,5366.52,02-11-2025,2765.34
+P0613,Brand_15,Women Ethnicwear,Bags,745.72,26-12-2025,452.61
+P0614,Brand_28,Footwear,Watches,2208.68,20-11-2025,1196.09
+P0615,Brand_09,Women Westernwear,Bags,6870.66,24-05-2025,2334.14
+P0616,Brand_27,Footwear,Sneakers,3487.48,11-09-2025,1395.06
+P0617,Brand_05,Footwear,Jeans,4360.63,03-09-2024,2419.44
+P0618,Brand_09,Kidswear,Tops,4592.29,19-10-2025,1782.03
+P0619,Brand_12,Women Westernwear,Watches,1613.13,10-06-2024,865.96
+P0620,Brand_15,Footwear,Trousers,2773.59,29-04-2026,1250.82
+P0621,Brand_08,Kidswear,Tops,2983.73,06-02-2024,1739.55
+P0622,Brand_27,Women Ethnicwear,Dresses,1844.58,12-04-2026,765.37
+P0623,Brand_20,Men Casualwear,Shirts,1866.69,10-02-2025,1118.26
+P0624,Brand_21,Beauty,Watches,4371.72,22-07-2025,1881.5
+P0625,Brand_22,Women Ethnicwear,Shirts,1025.79,20-05-2024,546.13
+P0626,Brand_20,Women Westernwear,Tops,1164.27,08-10-2024,422
+P0627,Brand_20,Kidswear,Jeans,4140.12,30-01-2026,1945.25
+P0628,Brand_20,Footwear,Sneakers,3309.57,13-01-2024,1321.32
+P0629,Brand_22,Women Ethnicwear,Sneakers,4398.95,18-06-2024,1337.6
+P0630,Brand_28,Accessories,Sandals,479.63,11-07-2025,211
+P0631,Brand_06,Footwear,Shirts,5021.94,10-12-2025,1783.79
+P0632,Brand_16,Men Formalwear,Tops,5993.26,15-01-2025,3636.39
+P0633,Brand_06,Kidswear,Dresses,3810.74,18-03-2024,2129.24
+P0634,Brand_06,Men Casualwear,Watches,5932.63,09-05-2024,3183.73
+P0635,Brand_29,Men Formalwear,Bags,2976.74,24-02-2026,1324.85
+P0636,Brand_15,Footwear,Shirts,827.79,08-07-2024,316.97
+P0637,Brand_22,Women Westernwear,Trousers,2828.55,25-05-2025,1142.16
+P0638,Brand_22,Women Westernwear,Sandals,3289.67,06-04-2026,1202.03
+P0639,Brand_01,Women Westernwear,Watches,6098.1,27-11-2024,2906.38
+P0640,Brand_15,Men Casualwear,Watches,2541.6,28-02-2024,1422.3
+P0641,Brand_06,Women Ethnicwear,Jeans,2410.18,18-12-2025,867.6
+P0642,Brand_10,Footwear,Skincare,6248.72,25-11-2025,1883.71
+P0643,Brand_06,Kidswear,Skincare,1980.47,28-07-2025,673.74
+P0644,Brand_20,Men Casualwear,Sandals,4603.39,06-03-2026,2060.01
+P0645,Brand_04,Women Ethnicwear,Skincare,2487.45,15-11-2025,761.04
+P0646,Brand_14,Women Ethnicwear,Jeans,6673.75,30-08-2025,2863.34
+P0647,Brand_10,Women Westernwear,Dresses,1569.49,21-10-2024,526.67
+P0648,Brand_29,Footwear,Tops,5149.39,24-02-2024,1722.4
+P0649,Brand_24,Men Formalwear,Sneakers,3984.43,02-10-2025,2103.92
+P0650,Brand_11,Men Formalwear,Trousers,6856.34,16-01-2026,4249.83
+P0651,Brand_09,Accessories,Shirts,6959.18,05-09-2025,2520.85
+P0652,Brand_22,Men Formalwear,Skincare,5616.78,30-07-2025,2097.69
+P0653,Brand_19,Footwear,Dresses,992.16,25-09-2025,391.76
+P0654,Brand_17,Kidswear,Skincare,3441.35,01-09-2024,1896.99
+P0655,Brand_03,Women Westernwear,Shirts,6024.24,13-04-2024,2782.51
+P0656,Brand_03,Women Ethnicwear,Sneakers,4576.84,09-07-2025,2208.86
+P0657,Brand_20,Women Westernwear,Watches,6188.09,11-04-2026,2938.61
+P0658,Brand_15,Women Westernwear,Sneakers,5654.75,30-04-2024,3392.62
+P0659,Brand_25,Accessories,Trousers,2395.84,03-03-2024,745.47
+P0660,Brand_01,Kidswear,Tops,1605.94,16-09-2025,562.93
+P0661,Brand_06,Footwear,Tops,2460.18,07-01-2025,1038.88
+P0662,Brand_24,Women Westernwear,Dresses,4961.83,07-03-2026,2263.44
+P0663,Brand_30,Accessories,Shirts,3522.14,20-02-2025,1185.06
+P0664,Brand_23,Kidswear,Sneakers,592.78,05-04-2025,347.26
+P0665,Brand_01,Men Formalwear,Trousers,5273.6,24-02-2024,2726
+P0666,Brand_02,Beauty,Shirts,598.47,19-04-2026,358.08
+P0667,Brand_27,Footwear,Jeans,3041.34,18-10-2024,1828.02
+P0668,Brand_15,Footwear,Tops,3396.31,21-01-2025,1575.92
+P0669,Brand_15,Men Casualwear,Bags,3669.28,08-07-2025,2102.36
+P0670,Brand_29,Men Casualwear,Skincare,1230.91,26-01-2026,659.47
+P0671,Brand_08,Men Casualwear,Tops,5309.19,02-12-2025,2205.24
+P0672,Brand_09,Men Casualwear,Sandals,5989.79,13-11-2025,3056.9
+P0673,Brand_21,Accessories,Shirts,4974.93,03-04-2024,3009.23
+P0674,Brand_28,Accessories,Sneakers,6671.17,18-03-2024,3632.34
+P0675,Brand_11,Women Ethnicwear,Jeans,2024.25,03-01-2026,1066.8
+P0676,Brand_05,Women Ethnicwear,Watches,1375.89,15-03-2026,510.45
+P0677,Brand_02,Men Formalwear,Tops,749.88,04-07-2025,424.4
+P0678,Brand_01,Accessories,Skincare,5133.18,13-03-2026,2180.02
+P0679,Brand_12,Footwear,Watches,1385.12,07-10-2024,692.15
+P0680,Brand_16,Accessories,Tops,6584.82,05-11-2024,3403.51
+P0681,Brand_15,Beauty,Kurtas,4307.95,29-05-2024,2002.67
+P0682,Brand_08,Beauty,Watches,5686.71,30-11-2025,2007.34
+P0683,Brand_21,Footwear,Jeans,3211.48,13-08-2025,1680.2
+P0684,Brand_27,Women Ethnicwear,Sandals,5222.47,17-07-2024,1979.93
+P0685,Brand_07,Women Westernwear,Bags,3271.46,31-05-2026,1259.24
+P0686,Brand_21,Beauty,Sandals,3908.72,27-01-2024,1331.21
+P0687,Brand_17,Men Casualwear,Watches,5482,10-11-2025,2732.13
+P0688,Brand_21,Beauty,Kurtas,1894.63,02-07-2024,639.57
+P0689,Brand_01,Men Casualwear,Jeans,6225.21,22-11-2025,2555.26
+P0690,Brand_21,Women Ethnicwear,Dresses,5098.2,02-03-2025,2980.65
+P0691,Brand_23,Beauty,Sneakers,5300.82,25-07-2024,2358.76
+P0692,Brand_21,Kidswear,Skincare,1894.69,20-02-2024,1110.75
+P0693,Brand_26,Men Formalwear,Watches,902.85,01-07-2025,413.21
+P0694,Brand_23,Women Westernwear,Jeans,787.14,21-05-2024,281.19
+P0695,Brand_30,Men Formalwear,Trousers,4634.01,31-01-2025,2515.59
+P0696,Brand_21,Kidswear,Tops,1304.02,18-04-2026,538.69
+P0697,Brand_14,Men Casualwear,Skincare,6993.58,21-02-2026,4260.85
+P0698,Brand_26,Women Ethnicwear,Sneakers,6738.02,11-03-2025,2586.6
+P0699,Brand_21,Accessories,Bags,494.48,07-10-2025,278.44
+P0700,Brand_17,Women Westernwear,Jeans,5156.89,26-12-2025,2362.04
+P0701,Brand_18,Women Ethnicwear,Trousers,2046.17,18-06-2025,1165.26
+P0702,Brand_11,Beauty,Tops,2583.03,01-07-2024,926.2
+P0703,Brand_19,Men Casualwear,Watches,1909.08,16-12-2025,959.84
+P0704,Brand_15,Women Westernwear,Sandals,5863.66,19-03-2024,1971.48
+P0705,Brand_04,Women Ethnicwear,Sandals,6287.14,05-04-2025,3506.75
+P0706,Brand_14,Women Westernwear,Jeans,569.69,19-11-2025,213.87
+P0707,Brand_29,Women Westernwear,Sneakers,2108.26,18-05-2025,920.94
+P0708,Brand_10,Women Ethnicwear,Sneakers,3305.28,03-11-2024,1685.4
+P0709,Brand_21,Men Casualwear,Jeans,3795.21,02-01-2025,1719.34
+P0710,Brand_13,Accessories,Tops,886.23,09-02-2025,486.76
+P0711,Brand_09,Men Formalwear,Sneakers,5860.19,18-10-2025,3048.56
+P0712,Brand_12,Women Ethnicwear,Sneakers,6556.67,25-05-2026,2240.61
+P0713,Brand_29,Kidswear,Bags,2998.2,17-11-2025,1641.54
+P0714,Brand_04,Beauty,Sandals,6042.47,06-10-2024,2631.58
+P0715,Brand_21,Kidswear,Skincare,4830.58,08-04-2024,2373.18
+P0716,Brand_25,Footwear,Sandals,4263.68,21-02-2025,1574.59
+P0717,Brand_06,Men Formalwear,Sneakers,5786.64,26-01-2026,2519.44
+P0718,Brand_23,Footwear,Bags,3468.3,13-07-2025,1947.42
+P0719,Brand_20,Women Ethnicwear,Bags,3968.7,10-10-2024,2366.95
+P0720,Brand_11,Men Formalwear,Trousers,2139.26,19-03-2024,1284.37
+P0721,Brand_06,Men Formalwear,Sandals,5070.64,10-08-2024,2657.16
+P0722,Brand_29,Men Casualwear,Tops,1364.72,23-09-2025,443.88
+P0723,Brand_06,Accessories,Skincare,1928.18,13-08-2025,851.57
+P0724,Brand_29,Kidswear,Sneakers,3514.47,02-02-2025,1271.47
+P0725,Brand_20,Men Formalwear,Dresses,2880.59,21-10-2024,1507.23
+P0726,Brand_26,Accessories,Kurtas,1904.17,03-06-2024,669.58
+P0727,Brand_09,Women Westernwear,Skincare,1584.65,07-05-2026,971.11
+P0728,Brand_01,Kidswear,Skincare,6067.01,14-01-2025,2197.78
+P0729,Brand_20,Beauty,Bags,4257.75,07-11-2025,1349.15
+P0730,Brand_12,Beauty,Trousers,2827.53,10-02-2025,1611.51
+P0731,Brand_17,Footwear,Bags,5965.73,17-05-2025,2175.86
+P0732,Brand_14,Accessories,Bags,5827.58,19-07-2025,1793.05
+P0733,Brand_10,Footwear,Watches,1041.94,09-11-2024,495.32
+P0734,Brand_22,Kidswear,Bags,4099.81,06-04-2026,2501.52
+P0735,Brand_16,Beauty,Bags,2346.61,07-02-2025,904.85
+P0736,Brand_20,Men Formalwear,Tops,3922.59,05-11-2025,1689.82
+P0737,Brand_21,Women Westernwear,Sneakers,5109.59,19-03-2026,1920.66
+P0738,Brand_21,Kidswear,Jeans,356,03-12-2024,170.37
+P0739,Brand_10,Women Ethnicwear,Kurtas,3739.9,25-07-2024,1508.27
+P0740,Brand_24,Women Ethnicwear,Skincare,2253.61,05-05-2026,1102.55
+P0741,Brand_07,Women Ethnicwear,Sandals,3876.87,24-11-2025,1756.09
+P0742,Brand_29,Women Ethnicwear,Sandals,1034.94,28-11-2025,618.12
+P0743,Brand_25,Women Westernwear,Bags,5776.7,14-04-2026,2971.57
+P0744,Brand_17,Men Formalwear,Watches,3941.58,25-01-2024,2043.43
+P0745,Brand_06,Men Casualwear,Shirts,1713.13,13-04-2026,780.62
+P0746,Brand_28,Men Formalwear,Trousers,5455.89,12-04-2024,2166.02
+P0747,Brand_17,Men Formalwear,Watches,552.14,08-05-2024,221.11
+P0748,Brand_25,Men Formalwear,Shirts,4270.92,11-07-2024,1970.08
+P0749,Brand_01,Women Ethnicwear,Skincare,3660.8,09-04-2024,1323.06
+P0750,Brand_11,Footwear,Sneakers,564.62,14-03-2024,193.31
+P0751,Brand_09,Men Casualwear,Sneakers,1972.03,20-04-2024,826.59
+P0752,Brand_25,Footwear,Kurtas,815.84,04-03-2025,278.82
+P0753,Brand_14,Women Ethnicwear,Jeans,5205.99,24-11-2024,1946.23
+P0754,Brand_04,Accessories,Kurtas,5027.67,27-10-2024,2369.08
+P0755,Brand_19,Beauty,Bags,897.3,31-05-2024,496.05
+P0756,Brand_05,Men Casualwear,Watches,1030.69,08-05-2026,383.34
+P0757,Brand_14,Men Casualwear,Watches,6196.89,20-10-2024,3428.94
+P0758,Brand_30,Men Casualwear,Skincare,1644.68,20-02-2025,501.58
+P0759,Brand_14,Kidswear,Shirts,2333.53,05-05-2024,1444.57
+P0760,Brand_13,Beauty,Trousers,4883.68,06-07-2024,2272.96
+P0761,Brand_02,Men Formalwear,Bags,705.85,25-07-2024,319.24
+P0762,Brand_14,Beauty,Jeans,6648.3,06-05-2026,3378.52
+P0763,Brand_29,Women Ethnicwear,Shirts,453.16,04-06-2024,204.85
+P0764,Brand_29,Accessories,Dresses,5988.25,29-03-2025,2578.34
+P0765,Brand_29,Footwear,Jeans,2717.07,24-04-2025,1137.68
+P0766,Brand_11,Men Casualwear,Dresses,1304.27,05-03-2024,799.4
+P0767,Brand_02,Beauty,Kurtas,2828.19,05-11-2024,1628.13
+P0768,Brand_08,Women Ethnicwear,Sneakers,6817.04,12-03-2024,3141.1
+P0769,Brand_07,Men Formalwear,Skincare,3843.15,03-06-2024,2181.62
+P0770,Brand_03,Kidswear,Watches,696.18,18-08-2025,242.07
+P0771,Brand_22,Accessories,Trousers,6607.33,16-05-2025,3101.63
+P0772,Brand_16,Women Ethnicwear,Sneakers,1260.86,12-03-2025,559.89
+P0773,Brand_22,Footwear,Tops,665.41,07-07-2024,268.8
+P0774,Brand_06,Beauty,Skincare,603.35,04-07-2025,358.33
+P0775,Brand_21,Footwear,Trousers,5835.44,08-03-2026,3305.18
+P0776,Brand_02,Men Casualwear,Jeans,1324.23,19-01-2026,781.65
+P0777,Brand_22,Beauty,Dresses,1498.19,01-06-2024,753.99
+P0778,Brand_25,Men Formalwear,Bags,6624.57,23-08-2025,2784.91
+P0779,Brand_08,Kidswear,Skincare,4396.79,03-08-2024,2383.85
+P0780,Brand_10,Accessories,Dresses,2211.31,30-01-2026,740.22
+P0781,Brand_14,Kidswear,Tops,4228.25,21-02-2025,2422.73
+P0782,Brand_18,Men Formalwear,Sandals,1927.72,17-10-2025,596.07
+P0783,Brand_16,Beauty,Dresses,3610.58,20-04-2025,2028.52
+P0784,Brand_04,Women Westernwear,Shirts,2540.97,17-08-2025,1334.67
+P0785,Brand_12,Accessories,Jeans,4470.6,04-04-2026,1467.73
+P0786,Brand_16,Accessories,Sandals,5383.02,28-04-2024,1868.12
+P0787,Brand_19,Accessories,Watches,2634,07-03-2026,1171.51
+P0788,Brand_19,Women Ethnicwear,Sneakers,1263.22,01-03-2025,500.18
+P0789,Brand_20,Men Formalwear,Kurtas,2682.46,05-05-2024,1549.21
+P0790,Brand_14,Men Casualwear,Skincare,5378.64,16-01-2025,1945.49
+P0791,Brand_16,Kidswear,Sneakers,5572.45,19-02-2024,2415.47
+P0792,Brand_11,Footwear,Sandals,5562.19,21-04-2025,2132.27
+P0793,Brand_09,Footwear,Dresses,6828.64,20-02-2025,2326.51
+P0794,Brand_10,Men Formalwear,Trousers,5825.04,10-12-2024,2231.67
+P0795,Brand_14,Women Ethnicwear,Jeans,6788.44,26-01-2025,3904.68
+P0796,Brand_04,Footwear,Kurtas,4498.51,01-07-2025,2379.53
+P0797,Brand_07,Footwear,Bags,1835.63,30-12-2025,1087.72
+P0798,Brand_04,Men Formalwear,Jeans,4373.92,12-12-2024,1879.43
+P0799,Brand_13,Beauty,Sandals,1624.49,15-01-2024,612.32
+P0800,Brand_15,Men Formalwear,Dresses,870.69,06-05-2025,268.54
+P0801,Brand_05,Beauty,Skincare,2317.87,13-04-2026,1062.63
+P0802,Brand_05,Men Casualwear,Tops,2729.6,14-12-2024,853.58
+P0803,Brand_16,Accessories,Bags,5048.55,18-04-2024,1521.47
+P0804,Brand_07,Kidswear,Shirts,2731.61,06-03-2026,1348.07
+P0805,Brand_27,Men Formalwear,Dresses,320.09,04-01-2025,112.91
+P0806,Brand_05,Women Ethnicwear,Shirts,6442.51,25-11-2024,3086.79
+P0807,Brand_15,Beauty,Tops,4248.01,17-09-2024,2054.03
+P0808,Brand_25,Kidswear,Kurtas,1711.08,06-10-2025,909.66
+P0809,Brand_04,Beauty,Trousers,1989.33,08-05-2024,840.69
+P0810,Brand_14,Men Casualwear,Trousers,1130.74,25-06-2025,594.37
+P0811,Brand_15,Footwear,Bags,6372.86,03-11-2024,2658.18
+P0812,Brand_17,Men Casualwear,Shirts,1841.4,06-12-2024,610.04
+P0813,Brand_27,Accessories,Watches,6601.34,09-07-2024,2635.23
+P0814,Brand_18,Beauty,Watches,2069.89,13-12-2025,625.98
+P0815,Brand_12,Beauty,Shirts,5653.98,04-02-2025,2532.91
+P0816,Brand_12,Men Formalwear,Kurtas,369.03,29-03-2026,198.13
+P0817,Brand_19,Women Westernwear,Trousers,3536.93,31-12-2025,1949.27
+P0818,Brand_09,Footwear,Sneakers,2772.74,01-11-2025,1037.76
+P0819,Brand_21,Men Casualwear,Skincare,2540.72,01-02-2025,848.11
+P0820,Brand_12,Kidswear,Kurtas,6946.45,16-04-2026,2496.12
+P0821,Brand_02,Women Ethnicwear,Shirts,5128.81,30-05-2025,3153.13
+P0822,Brand_17,Accessories,Trousers,2012.71,19-01-2025,804.83
+P0823,Brand_08,Accessories,Jeans,5340.36,02-11-2024,2335.72
+P0824,Brand_11,Footwear,Trousers,1167.11,16-03-2026,378.38
+P0825,Brand_10,Kidswear,Shirts,6502.72,12-08-2024,3593.31
+P0826,Brand_05,Beauty,Watches,3155.79,11-02-2026,1399.65
+P0827,Brand_09,Women Ethnicwear,Sandals,1576.44,20-07-2024,517.02
+P0828,Brand_28,Men Formalwear,Sneakers,2126.9,03-11-2025,959.96
+P0829,Brand_10,Accessories,Sneakers,1338.5,05-09-2024,707.06
+P0830,Brand_22,Accessories,Shirts,6533.74,06-01-2026,2949.15
+P0831,Brand_13,Women Westernwear,Bags,2348.49,07-01-2026,1432.49
+P0832,Brand_02,Women Westernwear,Trousers,1256.1,05-10-2025,727.2
+P0833,Brand_26,Kidswear,Skincare,5745.44,25-05-2026,2670.13
+P0834,Brand_28,Women Ethnicwear,Jeans,1727.84,27-03-2025,1038.37
+P0835,Brand_08,Kidswear,Bags,929.81,09-01-2026,520.36
+P0836,Brand_06,Footwear,Sneakers,4777.25,02-05-2025,1996.16
+P0837,Brand_28,Accessories,Trousers,348.62,04-02-2024,190.64
+P0838,Brand_03,Women Westernwear,Shirts,5876.22,03-01-2025,2714.07
+P0839,Brand_27,Men Casualwear,Sandals,4069.15,29-01-2024,1922.74
+P0840,Brand_06,Beauty,Sandals,1952.68,08-08-2025,911.12
+P0841,Brand_27,Women Westernwear,Kurtas,3472.08,14-05-2024,1934.56
+P0842,Brand_28,Women Ethnicwear,Dresses,2057.18,13-10-2024,1221.85
+P0843,Brand_08,Footwear,Skincare,3869.14,07-02-2026,1556.34
+P0844,Brand_07,Women Ethnicwear,Watches,4129.02,14-10-2025,2086.87
+P0845,Brand_04,Kidswear,Jeans,5469.27,23-10-2024,2740.6
+P0846,Brand_24,Beauty,Sandals,3421.79,21-03-2025,1998.32
+P0847,Brand_11,Beauty,Jeans,5569.47,27-05-2025,2467.88
+P0848,Brand_20,Footwear,Sneakers,762.93,07-11-2024,275.3
+P0849,Brand_19,Footwear,Trousers,6472,23-10-2025,2362.2
+P0850,Brand_16,Kidswear,Jeans,1541.91,09-05-2024,487.87
+P0851,Brand_08,Women Ethnicwear,Shirts,5904.07,11-01-2025,1961.53
+P0852,Brand_11,Women Westernwear,Skincare,3613.03,13-08-2024,1432.17
+P0853,Brand_16,Beauty,Sandals,1000.61,21-08-2025,333.02
+P0854,Brand_03,Women Ethnicwear,Watches,2709.68,18-07-2025,1568.23
+P0855,Brand_13,Women Westernwear,Tops,6451.82,12-12-2025,2682.96
+P0856,Brand_22,Women Ethnicwear,Kurtas,5891.58,22-11-2024,2462.15
+P0857,Brand_13,Women Ethnicwear,Bags,5138.52,22-07-2024,2787.14
+P0858,Brand_12,Men Formalwear,Kurtas,2843.97,30-01-2024,1127.43
+P0859,Brand_26,Beauty,Sneakers,4243.9,29-01-2026,2244.42
+P0860,Brand_17,Women Ethnicwear,Sneakers,1854.22,17-10-2024,1044.25
+P0861,Brand_23,Kidswear,Jeans,4639.55,27-10-2025,1926.61
+P0862,Brand_02,Accessories,Kurtas,2047.3,19-11-2024,927.22
+P0863,Brand_28,Beauty,Tops,5853.35,19-10-2024,2359.56
+P0864,Brand_24,Women Ethnicwear,Sandals,5019.14,25-07-2024,2185.4
+P0865,Brand_25,Footwear,Shirts,2885.8,20-11-2025,1402.03
+P0866,Brand_21,Kidswear,Bags,4717.53,09-09-2024,1943.08
+P0867,Brand_17,Women Westernwear,Trousers,2477.41,18-09-2024,1111.17
+P0868,Brand_16,Footwear,Bags,1341.87,13-09-2025,615.64
+P0869,Brand_19,Footwear,Tops,1874.73,01-04-2025,577.12
+P0870,Brand_15,Beauty,Sneakers,2119.31,20-10-2025,746.78
+P0871,Brand_22,Kidswear,Tops,1817.33,01-04-2024,860.03
+P0872,Brand_11,Women Westernwear,Sandals,4843.99,25-04-2026,1457.31
+P0873,Brand_24,Women Ethnicwear,Dresses,5254.73,27-07-2024,2760.53
+P0874,Brand_11,Women Ethnicwear,Bags,3361.83,14-04-2024,1982.64
+P0875,Brand_15,Men Casualwear,Sandals,6917.22,06-04-2024,3745.41
+P0876,Brand_03,Men Casualwear,Jeans,6268.84,01-10-2024,2510.85
+P0877,Brand_28,Kidswear,Kurtas,882.24,08-01-2025,391.67
+P0878,Brand_21,Footwear,Watches,3384.02,08-03-2024,1719.86
+P0879,Brand_08,Beauty,Skincare,6385.79,03-07-2025,3306.18
+P0880,Brand_02,Footwear,Jeans,1774.77,24-06-2025,1087.58
+P0881,Brand_26,Kidswear,Shirts,2834.25,16-11-2025,1297.39
+P0882,Brand_01,Men Casualwear,Skincare,6643.55,15-01-2024,2523.56
+P0883,Brand_15,Beauty,Watches,5498.62,25-03-2024,2286.88
+P0884,Brand_01,Men Casualwear,Kurtas,5875.58,30-06-2024,3497.04
+P0885,Brand_21,Women Westernwear,Watches,6191.54,21-01-2025,3111.04
+P0886,Brand_07,Kidswear,Tops,1445.88,01-06-2025,833.64
+P0887,Brand_13,Women Ethnicwear,Trousers,4984.14,27-06-2024,2650.1
+P0888,Brand_18,Men Casualwear,Shirts,5677.77,12-11-2024,3457.41
+P0889,Brand_12,Men Formalwear,Tops,1816.41,28-03-2025,836.26
+P0890,Brand_21,Women Westernwear,Skincare,589.51,25-04-2025,356.05
+P0891,Brand_16,Accessories,Sandals,1493.98,09-04-2025,871.71
+P0892,Brand_13,Men Casualwear,Dresses,5266.4,18-07-2025,3000.74
+P0893,Brand_10,Men Formalwear,Shirts,4950.75,28-10-2025,2972.97
+P0894,Brand_13,Men Casualwear,Shirts,6273.57,09-01-2026,2937.11
+P0895,Brand_10,Kidswear,Sneakers,2422.59,01-05-2026,1302.64
+P0896,Brand_18,Men Formalwear,Watches,4464.69,12-12-2024,2132.82
+P0897,Brand_23,Accessories,Bags,478.52,16-10-2024,262.42
+P0898,Brand_18,Footwear,Tops,6564.06,02-09-2024,3573.48
+P0899,Brand_01,Kidswear,Dresses,4014.1,04-11-2024,2178.41
+P0900,Brand_26,Footwear,Skincare,5313.18,20-04-2025,2322.41
+P0901,Brand_24,Kidswear,Watches,2200.57,16-06-2025,1220.9
+P0902,Brand_25,Beauty,Tops,848.09,02-03-2024,492.3
+P0903,Brand_02,Women Ethnicwear,Jeans,719.91,30-05-2026,362.55
+P0904,Brand_25,Women Westernwear,Dresses,5757.22,06-02-2024,2564.78
+P0905,Brand_15,Accessories,Sandals,1317.04,19-12-2024,754.72
+P0906,Brand_26,Women Ethnicwear,Sneakers,5819.81,02-02-2025,3195.68
+P0907,Brand_24,Women Westernwear,Dresses,2076.28,31-10-2024,934.89
+P0908,Brand_27,Accessories,Trousers,3925.52,11-07-2024,1906.07
+P0909,Brand_04,Men Casualwear,Watches,2053.84,12-04-2025,1066.9
+P0910,Brand_17,Women Westernwear,Skincare,634.56,07-01-2024,330.14
+P0911,Brand_22,Women Westernwear,Watches,3932.27,17-10-2025,1571.07
+P0912,Brand_18,Men Casualwear,Jeans,2758.71,22-08-2025,1086
+P0913,Brand_25,Accessories,Trousers,3214.24,10-11-2025,1876.96
+P0914,Brand_22,Men Formalwear,Sneakers,4329.44,20-12-2025,2596.99
+P0915,Brand_02,Kidswear,Sneakers,2400.53,21-02-2026,1029.01
+P0916,Brand_06,Beauty,Skincare,4076.5,10-05-2024,2414.43
+P0917,Brand_20,Men Casualwear,Skincare,4706.08,06-01-2026,2120.66
+P0918,Brand_11,Women Westernwear,Skincare,898.95,12-05-2025,317.78
+P0919,Brand_11,Kidswear,Kurtas,2644.65,18-04-2024,1413.62
+P0920,Brand_28,Kidswear,Shirts,901.65,17-05-2026,283.73
+P0921,Brand_03,Women Ethnicwear,Bags,345.46,16-12-2025,116.23
+P0922,Brand_16,Men Casualwear,Shirts,642.24,25-08-2024,386.06
+P0923,Brand_10,Beauty,Shirts,4266.84,24-02-2026,1986.81
+P0924,Brand_02,Kidswear,Sandals,863.85,06-10-2025,332.79
+P0925,Brand_12,Kidswear,Sandals,6117.96,29-01-2025,2775.91
+P0926,Brand_13,Men Casualwear,Bags,5387.28,22-05-2024,2612.92
+P0927,Brand_14,Kidswear,Dresses,358.08,06-10-2025,180.63
+P0928,Brand_05,Beauty,Watches,4139.74,02-04-2026,1703.22
+P0929,Brand_22,Men Formalwear,Skincare,367.69,18-06-2024,155.89
+P0930,Brand_11,Men Formalwear,Skincare,1030.61,01-01-2024,490.49
+P0931,Brand_18,Accessories,Watches,6920.27,21-07-2024,3463.82
+P0932,Brand_17,Accessories,Bags,3361.06,16-09-2024,1999.27
+P0933,Brand_17,Kidswear,Sneakers,481.32,30-11-2024,204.82
+P0934,Brand_16,Men Formalwear,Sandals,5996.11,11-05-2026,3477.14
+P0935,Brand_10,Men Casualwear,Shirts,6445.21,29-04-2026,3982.04
+P0936,Brand_15,Accessories,Skincare,3973.17,14-08-2025,1622.96
+P0937,Brand_16,Men Casualwear,Shirts,5028.81,10-07-2024,1552.55
+P0938,Brand_01,Accessories,Skincare,5525.81,05-07-2024,2726.43
+P0939,Brand_22,Footwear,Sneakers,5221.3,12-03-2024,3076.22
+P0940,Brand_14,Footwear,Shirts,3612.3,28-11-2025,1145.4
+P0941,Brand_09,Women Westernwear,Sandals,5877.99,13-07-2024,2134.23
+P0942,Brand_01,Women Westernwear,Trousers,3832.1,03-03-2026,1978.77
+P0943,Brand_10,Beauty,Skincare,2037.67,13-06-2025,1139.24
+P0944,Brand_13,Men Casualwear,Jeans,326.25,05-03-2025,106.92
+P0945,Brand_26,Beauty,Sneakers,2701.55,30-03-2026,1124.91
+P0946,Brand_20,Kidswear,Skincare,852.32,17-05-2024,320.81
+P0947,Brand_13,Women Ethnicwear,Dresses,722.95,13-02-2025,440.1
+P0948,Brand_04,Kidswear,Skincare,3442.8,16-08-2024,1784.71
+P0949,Brand_09,Women Westernwear,Tops,6621.62,08-06-2024,2994.33
+P0950,Brand_28,Women Westernwear,Kurtas,1005.95,11-04-2026,579.38
+P0951,Brand_04,Accessories,Skincare,2133.12,17-06-2025,1006.94
+P0952,Brand_19,Women Westernwear,Dresses,5860.52,22-05-2024,3467.24
+P0953,Brand_16,Beauty,Sandals,2991.26,04-04-2024,1125.97
+P0954,Brand_07,Women Ethnicwear,Kurtas,5382.98,02-10-2024,1661.99
+P0955,Brand_27,Women Ethnicwear,Trousers,3932.64,05-01-2026,1719.34
+P0956,Brand_12,Women Westernwear,Dresses,4345.34,08-05-2024,1587.65
+P0957,Brand_20,Footwear,Shirts,1378.66,16-10-2025,782.3
+P0958,Brand_03,Men Casualwear,Dresses,2659.29,03-04-2024,1251.29
+P0959,Brand_29,Women Westernwear,Sneakers,4464.76,24-10-2024,1751.85
+P0960,Brand_01,Accessories,Kurtas,478.35,05-04-2025,261.92
+P0961,Brand_10,Women Westernwear,Bags,1560.79,23-04-2024,731.39
+P0962,Brand_28,Women Ethnicwear,Shirts,2888.51,15-12-2024,1331.3
+P0963,Brand_20,Women Ethnicwear,Jeans,4818.78,24-08-2024,1724.41
+P0964,Brand_21,Kidswear,Skincare,3713.24,10-02-2024,2296.52
+P0965,Brand_10,Men Formalwear,Skincare,5114.51,01-01-2024,2612.93
+P0966,Brand_24,Kidswear,Sandals,5168.98,08-05-2024,2964.63
+P0967,Brand_28,Accessories,Sneakers,507.07,22-10-2025,275.4
+P0968,Brand_19,Men Casualwear,Trousers,6340.47,03-02-2024,2922.57
+P0969,Brand_07,Accessories,Sandals,5821.24,21-03-2025,1764.5
+P0970,Brand_28,Men Formalwear,Watches,2115.16,22-01-2024,1085.78
+P0971,Brand_01,Footwear,Trousers,3545.32,09-07-2024,1177.89
+P0972,Brand_27,Footwear,Jeans,2363.6,06-06-2024,1436.29
+P0973,Brand_01,Accessories,Watches,6373.5,26-10-2024,2420.43
+P0974,Brand_02,Women Westernwear,Watches,2863.89,17-10-2025,1195.81
+P0975,Brand_02,Women Ethnicwear,Shirts,2952.56,06-01-2025,1406.89
+P0976,Brand_06,Beauty,Shirts,6408.81,14-01-2024,2953.41
+P0977,Brand_22,Kidswear,Dresses,4323.65,07-05-2024,2203.54
+P0978,Brand_12,Footwear,Skincare,1222.73,25-09-2024,673.36
+P0979,Brand_03,Women Ethnicwear,Watches,4493.31,02-09-2024,2437.38
+P0980,Brand_11,Women Ethnicwear,Watches,5621.8,13-05-2025,3320.16
+P0981,Brand_30,Footwear,Sneakers,2562.54,05-11-2024,1154.1
+P0982,Brand_16,Kidswear,Bags,3829.94,17-10-2025,1803.65
+P0983,Brand_22,Footwear,Tops,4498.84,10-08-2024,2608
+P0984,Brand_08,Men Casualwear,Bags,3718.79,20-08-2025,1451.61
+P0985,Brand_16,Footwear,Sandals,6993.13,29-03-2024,2648.26
+P0986,Brand_24,Women Westernwear,Kurtas,3694.51,21-05-2026,1119.14
+P0987,Brand_21,Men Formalwear,Trousers,4609.6,20-05-2026,2472.19
+P0988,Brand_01,Kidswear,Skincare,5616.05,31-08-2024,2920.5
+P0989,Brand_19,Beauty,Skincare,1214.11,25-07-2024,471.74
+P0990,Brand_24,Women Ethnicwear,Trousers,593.2,01-01-2024,202.62
+P0991,Brand_05,Women Westernwear,Jeans,6818.03,10-05-2026,2138.2
+P0992,Brand_12,Women Ethnicwear,Dresses,5205.14,03-02-2024,2374.15
+P0993,Brand_20,Men Formalwear,Sandals,2933.99,02-01-2024,1061.85
+P0994,Brand_01,Women Westernwear,Jeans,417.38,27-03-2024,231.18
+P0995,Brand_22,Kidswear,Skincare,1413.88,17-09-2024,854
+P0996,Brand_26,Men Casualwear,Watches,364.31,10-05-2026,199.86
+P0997,Brand_16,Women Ethnicwear,Sandals,2955.26,26-05-2024,1691.92
+P0998,Brand_14,Men Formalwear,Jeans,4016.53,17-05-2025,2478.41
+P0999,Brand_03,Beauty,Skincare,1374.91,27-07-2025,738.41
+P1000,Brand_22,Beauty,Sneakers,4586.04,06-12-2025,2208.38
