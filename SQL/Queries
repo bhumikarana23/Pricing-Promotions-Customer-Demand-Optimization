@@ -1018,7 +1018,3 @@ ORDER BY revenue DESC;
 -- ============================================================
 -- END OF SQL ANALYSIS
 -- ============================================================
-
--- The temporary RFM table exists only for the current session.
--- Re-run Query 42 before executing Queries 43, 44 or 60
--- if the MySQL session has been closed.
