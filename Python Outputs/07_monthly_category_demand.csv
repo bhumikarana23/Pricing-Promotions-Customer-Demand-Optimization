@@ -1,0 +1,145 @@
+month,category,quantity
+2025-01-01,Accessories,157
+2025-01-01,Beauty,123
+2025-01-01,Footwear,132
+2025-01-01,Kidswear,127
+2025-01-01,Men Casualwear,162
+2025-01-01,Men Formalwear,136
+2025-01-01,Women Ethnicwear,147
+2025-01-01,Women Westernwear,101
+2025-02-01,Accessories,136
+2025-02-01,Beauty,103
+2025-02-01,Footwear,141
+2025-02-01,Kidswear,110
+2025-02-01,Men Casualwear,161
+2025-02-01,Men Formalwear,132
+2025-02-01,Women Ethnicwear,146
+2025-02-01,Women Westernwear,118
+2025-03-01,Accessories,143
+2025-03-01,Beauty,127
+2025-03-01,Footwear,144
+2025-03-01,Kidswear,110
+2025-03-01,Men Casualwear,167
+2025-03-01,Men Formalwear,123
+2025-03-01,Women Ethnicwear,151
+2025-03-01,Women Westernwear,146
+2025-04-01,Accessories,138
+2025-04-01,Beauty,114
+2025-04-01,Footwear,131
+2025-04-01,Kidswear,117
+2025-04-01,Men Casualwear,150
+2025-04-01,Men Formalwear,139
+2025-04-01,Women Ethnicwear,134
+2025-04-01,Women Westernwear,152
+2025-05-01,Accessories,148
+2025-05-01,Beauty,126
+2025-05-01,Footwear,163
+2025-05-01,Kidswear,141
+2025-05-01,Men Casualwear,169
+2025-05-01,Men Formalwear,156
+2025-05-01,Women Ethnicwear,159
+2025-05-01,Women Westernwear,146
+2025-06-01,Accessories,177
+2025-06-01,Beauty,133
+2025-06-01,Footwear,117
+2025-06-01,Kidswear,119
+2025-06-01,Men Casualwear,139
+2025-06-01,Men Formalwear,120
+2025-06-01,Women Ethnicwear,154
+2025-06-01,Women Westernwear,146
+2025-07-01,Accessories,132
+2025-07-01,Beauty,130
+2025-07-01,Footwear,126
+2025-07-01,Kidswear,129
+2025-07-01,Men Casualwear,159
+2025-07-01,Men Formalwear,145
+2025-07-01,Women Ethnicwear,152
+2025-07-01,Women Westernwear,116
+2025-08-01,Accessories,151
+2025-08-01,Beauty,150
+2025-08-01,Footwear,121
+2025-08-01,Kidswear,158
+2025-08-01,Men Casualwear,152
+2025-08-01,Men Formalwear,179
+2025-08-01,Women Ethnicwear,166
+2025-08-01,Women Westernwear,127
+2025-09-01,Accessories,158
+2025-09-01,Beauty,117
+2025-09-01,Footwear,134
+2025-09-01,Kidswear,116
+2025-09-01,Men Casualwear,143
+2025-09-01,Men Formalwear,127
+2025-09-01,Women Ethnicwear,172
+2025-09-01,Women Westernwear,136
+2025-10-01,Accessories,161
+2025-10-01,Beauty,141
+2025-10-01,Footwear,120
+2025-10-01,Kidswear,134
+2025-10-01,Men Casualwear,158
+2025-10-01,Men Formalwear,136
+2025-10-01,Women Ethnicwear,150
+2025-10-01,Women Westernwear,125
+2025-11-01,Accessories,150
+2025-11-01,Beauty,135
+2025-11-01,Footwear,140
+2025-11-01,Kidswear,120
+2025-11-01,Men Casualwear,159
+2025-11-01,Men Formalwear,143
+2025-11-01,Women Ethnicwear,159
+2025-11-01,Women Westernwear,161
+2025-12-01,Accessories,133
+2025-12-01,Beauty,139
+2025-12-01,Footwear,160
+2025-12-01,Kidswear,149
+2025-12-01,Men Casualwear,156
+2025-12-01,Men Formalwear,143
+2025-12-01,Women Ethnicwear,153
+2025-12-01,Women Westernwear,145
+2026-01-01,Accessories,172
+2026-01-01,Beauty,135
+2026-01-01,Footwear,145
+2026-01-01,Kidswear,158
+2026-01-01,Men Casualwear,138
+2026-01-01,Men Formalwear,143
+2026-01-01,Women Ethnicwear,130
+2026-01-01,Women Westernwear,151
+2026-02-01,Accessories,111
+2026-02-01,Beauty,139
+2026-02-01,Footwear,116
+2026-02-01,Kidswear,126
+2026-02-01,Men Casualwear,146
+2026-02-01,Men Formalwear,101
+2026-02-01,Women Ethnicwear,166
+2026-02-01,Women Westernwear,137
+2026-03-01,Accessories,149
+2026-03-01,Beauty,116
+2026-03-01,Footwear,101
+2026-03-01,Kidswear,107
+2026-03-01,Men Casualwear,191
+2026-03-01,Men Formalwear,130
+2026-03-01,Women Ethnicwear,170
+2026-03-01,Women Westernwear,134
+2026-04-01,Accessories,159
+2026-04-01,Beauty,110
+2026-04-01,Footwear,121
+2026-04-01,Kidswear,134
+2026-04-01,Men Casualwear,170
+2026-04-01,Men Formalwear,150
+2026-04-01,Women Ethnicwear,154
+2026-04-01,Women Westernwear,112
+2026-05-01,Accessories,119
+2026-05-01,Beauty,142
+2026-05-01,Footwear,114
+2026-05-01,Kidswear,144
+2026-05-01,Men Casualwear,154
+2026-05-01,Men Formalwear,140
+2026-05-01,Women Ethnicwear,144
+2026-05-01,Women Westernwear,115
+2026-06-01,Accessories,144
+2026-06-01,Beauty,108
+2026-06-01,Footwear,137
+2026-06-01,Kidswear,140
+2026-06-01,Men Casualwear,144
+2026-06-01,Men Formalwear,146
+2026-06-01,Women Ethnicwear,146
+2026-06-01,Women Westernwear,144

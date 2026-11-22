@@ -1,0 +1,8 @@
+dataset,rows,columns,duplicate_rows,missing_cells
+customers,5000,7,0,3002
+products,1000,7,0,0
+orders,12000,7,0,0
+order_items,18246,11,0,0
+promotions,40,7,0,30
+sessions,40000,7,0,28000
+inventory,18000,6,0,0

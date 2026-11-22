@@ -1,0 +1,25 @@
+category,forecast_month,forecast_units,holdout_mae,holdout_rmse
+Accessories,2026-07-01,140.67,15.0,18.48
+Accessories,2026-08-01,140.67,15.0,18.48
+Accessories,2026-09-01,140.67,15.0,18.48
+Beauty,2026-07-01,120.0,13.33,16.08
+Beauty,2026-08-01,120.0,13.33,16.08
+Beauty,2026-09-01,120.0,13.33,16.08
+Footwear,2026-07-01,124.0,23.0,24.93
+Footwear,2026-08-01,124.0,23.0,24.93
+Footwear,2026-09-01,124.0,23.0,24.93
+Kidswear,2026-07-01,139.33,32.33,32.59
+Kidswear,2026-08-01,139.33,32.33,32.59
+Kidswear,2026-09-01,139.33,32.33,32.59
+Men Casualwear,2026-07-01,156.0,35.0,36.6
+Men Casualwear,2026-08-01,156.0,35.0,36.6
+Men Casualwear,2026-09-01,156.0,35.0,36.6
+Men Formalwear,2026-07-01,145.33,15.33,15.87
+Men Formalwear,2026-08-01,145.33,15.33,15.87
+Men Formalwear,2026-09-01,145.33,15.33,15.87
+Women Ethnicwear,2026-07-01,148.0,22.0,22.42
+Women Ethnicwear,2026-08-01,148.0,22.0,22.42
+Women Ethnicwear,2026-09-01,148.0,22.0,22.42
+Women Westernwear,2026-07-01,123.67,17.0,17.75
+Women Westernwear,2026-08-01,123.67,17.0,17.75
+Women Westernwear,2026-09-01,123.67,17.0,17.75
